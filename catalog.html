@@ -9,7 +9,9 @@
   <body>
     <header class="main-header">
       <div class="header-logo">
-        <img src="..." alt="Logo of HTML Academy" />
+        <a class="navigation-logo" href="index.html"
+          ><img src="..." alt="Logo of HTML Academy"
+        /></a>
       </div>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -37,7 +39,24 @@
       </nav>
     </header>
     <main class="main-catalog">
-      <section class="section-serch">
+      <section class="section-search">
+        <h1 class="search-title">Гостиницы Седоны</h1>
+        <ul class="search-condition">
+          <li class="search-item">
+            <a class="button-home" href="index.html"
+              ><img src="..." alt="home logo picture"
+            /></a>
+          </li>
+          <li class="search-item">
+            <img src="..." alt="You are here logo" />
+          </li>
+          <li class="search-item">
+            <!-- <a class="button-home" href="index.html">Гостиницы</a> 
+                Если нужно как то отображать что мы на текущей странцие через ссылку то
+            раскомменитровать-->
+            Гостиницы
+          </li>
+        </ul>
         <form action="https://echo.htmlacademy.ru/" method="get"></form>
       </section>
       <section class="subscribe">
@@ -62,33 +81,34 @@
       </section>
     </main>
     <footer class="page-footer">
-        <ul class="social">
-          <li class="social-item">
-            <a class="social-link" href="https://vk.com/htmlacademy"
-              ><img class="social-img" src="..." alt="VK logo"
-            /></a>
-          </li>
-          <li class="social-item">
-            <a class="social-link" href="https://t.me/htmlacademy"
-              ><img class="social-img" src="..." alt="Telegram logo"
-            /></a>
-          </li>
-          <li class="social-item">
-            <a
-              class="social-link"
-              href="https://www.youtube.com/user/htmlacademyru"
-              ><img class="social-img" src="..." alt="YouTube logo"
-            /></a>
-          </li>
-        </ul>
-        <div class="footer-phone">
-          <span class="footer-number">+7 (812) 812-12-12</span>
-        </div>
-        <div class="footer-logo">
-          <a href="https://vk.com/htmlacademy">
-            <img class="footer-logo" src="..." alt="Footer logo HTMLAcademy"
+      <ul class="social">
+        <h3 class="visually-hidden">Список социальных сетей</h3>
+        <li class="social-item">
+          <a class="social-link" href="https://vk.com/htmlacademy"
+            ><img class="social-img" src="..." alt="VK logo"
           /></a>
-        </div>
-      </footer>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="https://t.me/htmlacademy"
+            ><img class="social-img" src="..." alt="Telegram logo"
+          /></a>
+        </li>
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="https://www.youtube.com/user/htmlacademyru"
+            ><img class="social-img" src="..." alt="YouTube logo"
+          /></a>
+        </li>
+      </ul>
+      <div class="footer-phone">
+        <span class="footer-number">+7 (812) 812-12-12</span>
+      </div>
+      <div class="footer-logo">
+        <a href="https://vk.com/htmlacademy">
+          <img class="footer-logo" src="..." alt="Footer logo HTMLAcademy"
+        /></a>
+      </div>
+    </footer>
   </body>
 </html>
