@@ -14,13 +14,13 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a href="#">Главная</a>
+            <a class="navigation-link-current" href="#">Главная</a>
           </li>
           <li class="navigation-item">
-            <a href="#">О Седоне</a>
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a href="catalog.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -42,24 +42,23 @@
           Самое главное о прекрасном городе Седона
         </h1>
         <div class="welcome-picture">
+          
           <img class="sedona-logo" src="..." alt="word Sedona" />
           <img class="welcome-logo" src="..." alt="word Welcome" />
           <img class="welcome-gorgeous" src="..." alt="Words gorgeous " />
           <!-- из трех картинок сделать 1 -->
         </div>
-        <!-- весь артикл ниже засунуть в див и опустить в секцию ниже где список -->
-        <article class="greeting-article">
-          <h2 class="article-title">
-            Седона — небольшой городок в Аризоне, заслуживающий большего!
-          </h2>
-          <span class="article-about"
-            >Рассмотрим причины, по которым Седона круче, чем
-            Гранд-Каньон!</span
-          >
-        </article>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
+        <div class="greeting-block">
+          <h2 class="greeting-title">
+            Седона — небольшой городок в Аризоне, заслуживающий большего!
+          </h2>
+          <p class="greeting-about"></p>
+            Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+          </p>
+        </div>
         <ul class="advantages-list">
           <li class="advantages-items">
             <h3 class="advantages-title">Настоящий городок</h3>
@@ -143,8 +142,8 @@
         <p class="subscribe-description">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
-        <!-- методы через форс а не гет -->
-        <form action=" https://echo.htmlacademy.ru/" method="get">
+        <form action=" https://echo.htmlacademy.ru/" method="post">
+          
           <!-- связать лейблом надпись -->
           <input
             class="subscribe-field"
@@ -153,55 +152,49 @@
             placeholder="Ваш email"
             required
           />
-          <!-- <input
-          class="subscribe-button"
-          type="submit"
-          name="email-button"
-          value="Подписаться"
-        /> -->
-          <button class="subscribe-button" type="submit">Подписаться</button>
+          <button class="subscribe-button" type="submit">
+            <!-- <span class="visually-hidden">Подписаться</span> -->
+            Подписаться
+          </button>
         </form>
       </section>
     </main>
     <footer class="page-footer">
       <section>
-        <!-- поменять заголовок на h2 -->
-        <h3 class="visually-hidden">Список социальных сетей</h3>
+        <h2 class="visually-hidden">Список социальных сетей</h2>
         <ul class="social">
           <li class="social-item">
             <!-- картинка инлайновая тегом svg а не img -->
-            <!-- еще добавить спан для ссылки логотипов с visually-hidden писать с большой буквы и точка в конце -->
-            <a class="social-link" href="https://vk.com/htmlacademy"
-              ><img class="social-img" src="..." alt="VK logo"
-            /></a>
+            <a class="social-link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Ссылка-логотип социальной сети ВКонтакте.</span>
+              <img class="social-img" src="..." alt="VK logo"/>
+            </a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="https://t.me/htmlacademy"
-              ><img class="social-img" src="..." alt="Telegram logo"
-            /></a>
+            <a class="social-link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Ссылка-логотип мессенджера Телеграм.</span>
+              <img class="social-img" src="..." alt="Telegram logo"/>
+            </a>
           </li>
           <li class="social-item">
-            <a
-              class="social-link"
-              href="https://www.youtube.com/user/htmlacademyru"
-              ><img class="social-img" src="..." alt="YouTube logo"
-            /></a>
+            <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ссылка-логотип мессенджера Телеграм.</span>
+              <img class="social-img" src="..." alt="YouTube logo"/>
+            </a>
           </li>
         </ul>
       </section>
-      <section class="footer-phone">
-        <!-- поменть залоговок на ш2 -->
-        <h3 class="visually-hidden">Контактный телефон</h3>
-        <!-- сделать с тег адресс и обернуть в ссылку внести формат телефона -->
-        <span class="footer-number">+7 (812) 812-12-12</span>
-      </section>
-      <section class="footer-logo">
+      <div class="footer-phone">
+        <h2 class="visually-hidden">Контактный телефон</h2>
+        <a class="footer-number" href="tel:+78128121212">+7 812 812-12-12</a>
+      </div>
+      <di class="footer-logo">
         <h3 class="visually-hidden">Ссылка логотоип HTML Academy</h3>
         <a href="https://vk.com/htmlacademy">
-          <!-- заменить имедж на свг и доабвить спан с вижули хидден -->
+          <!-- заменить имедж на свг и доабвить спан на вижули хидден -->
           <img class="footer-logo" src="..." alt="Logo HTMLAcademy"
         /></a>
-      </section>
+      </di>
     </footer>
   </body>
 </html>

@@ -11,17 +11,16 @@
       <div class="header-logo">
         <a class="navigation-logo" href="index.html">
           <!-- добавить в подпись на русский язык и в коцне точка  -->
-          <img src="..." alt="Logo of HTML Academy"
+          <img src="..." alt="Логотип сайта HTML."
         /></a>
       </div>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a href="index.html">Главная</a>
-            <!-- тут добавить класс текущая страница для css -->
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a href="#">О Седоне</a>
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link-current" href="catalog.html">Гостиницы</a>
@@ -253,7 +252,7 @@
         <p class="subscribe-description">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
-        <form action=" https://echo.htmlacademy.ru/" method="get">
+        <form action=" https://echo.htmlacademy.ru/" method="post">
           <input
             class="subscribe-field"
             type="email"
@@ -261,49 +260,58 @@
             placeholder="Ваш email"
             required
           />
-          <!-- <input
-          class="subscribe-button"
-          type="submit"
-          name="email-button"
-          value="Подписаться"
-        /> -->
-          <button class="subscribe-button" type="submit">Подписаться</button>
+          <button class="subscribe-button" type="submit">
+            <!-- <span class="visually-hidden">Подписаться</span> -->
+            Подписаться
+          </button>
         </form>
       </section>
     </main>
     <footer class="page-footer">
       <section>
-        <h3 class="visually-hidden">Список социальных сетей</h3>
+        <h2 class="visually-hidden">Список социальных сетей</h2>
         <ul class="social">
           <li class="social-item">
-            <a class="social-link" href="https://vk.com/htmlacademy"
-              ><img class="social-img" src="..." alt="VK logo"
-            /></a>
+            <!-- картинка инлайновая тегом svg а не img -->
+            <a class="social-link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden"
+                >Ссылка-логотип социальной сети ВКонтакте.</span
+              >
+              <img class="social-img" src="..." alt="VK logo" />
+            </a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="https://t.me/htmlacademy"
-              ><img class="social-img" src="..." alt="Telegram logo"
-            /></a>
+            <a class="social-link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden"
+                >Ссылка-логотип мессенджера Телеграм.</span
+              >
+              <img class="social-img" src="..." alt="Telegram logo" />
+            </a>
           </li>
           <li class="social-item">
             <a
               class="social-link"
               href="https://www.youtube.com/user/htmlacademyru"
-              ><img class="social-img" src="..." alt="YouTube logo"
-            /></a>
+            >
+              <span class="visually-hidden"
+                >Ссылка-логотип мессенджера Телеграм.</span
+              >
+              <img class="social-img" src="..." alt="YouTube logo" />
+            </a>
           </li>
         </ul>
       </section>
-      <section class="footer-phone">
-        <h3 class="visually-hidden">Контактный телефон</h3>
-        <span class="footer-number">+7 (812) 812-12-12</span>
-      </section>
-      <section class="footer-logo">
+      <div class="footer-phone">
+        <h2 class="visually-hidden">Контактный телефон</h2>
+        <a class="footer-number" href="tel:+78128121212">+7 812 812-12-12</a>
+      </div>
+      <div class="footer-logo">
         <h3 class="visually-hidden">Ссылка логотоип HTML Academy</h3>
         <a href="https://vk.com/htmlacademy">
+          <!-- заменить имедж на свг и доабвить спан на вижули хидден -->
           <img class="footer-logo" src="..." alt="Logo HTMLAcademy"
         /></a>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
