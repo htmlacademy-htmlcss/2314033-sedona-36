@@ -38,12 +38,16 @@
     </header>
     <main class="main-page">
       <section class="'welcome-section">
-        <h1 class="visually-hidden">Приветствие в Седоне</h1>
+        <h1 class="visually-hidden">
+          Самое главное о прекрасном городе Седона
+        </h1>
         <div class="welcome-picture">
           <img class="sedona-logo" src="..." alt="word Sedona" />
           <img class="welcome-logo" src="..." alt="word Welcome" />
           <img class="welcome-gorgeous" src="..." alt="Words gorgeous " />
+          <!-- из трех картинок сделать 1 -->
         </div>
+        <!-- весь артикл ниже засунуть в див и опустить в секцию ниже где список -->
         <article class="greeting-article">
           <h2 class="article-title">
             Седона — небольшой городок в Аризоне, заслуживающий большего!
@@ -135,10 +139,13 @@
       </section>
       <section class="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <!-- нижестоящий параграф сделать в одну линию. такие переносы нежелательны -->
         <p class="subscribe-description">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
+        <!-- методы через форс а не гет -->
         <form action=" https://echo.htmlacademy.ru/" method="get">
+          <!-- связать лейблом надпись -->
           <input
             class="subscribe-field"
             type="email"
@@ -158,9 +165,12 @@
     </main>
     <footer class="page-footer">
       <section>
+        <!-- поменять заголовок на h2 -->
         <h3 class="visually-hidden">Список социальных сетей</h3>
         <ul class="social">
           <li class="social-item">
+            <!-- картинка инлайновая тегом svg а не img -->
+            <!-- еще добавить спан для ссылки логотипов с visually-hidden писать с большой буквы и точка в конце -->
             <a class="social-link" href="https://vk.com/htmlacademy"
               ><img class="social-img" src="..." alt="VK logo"
             /></a>
@@ -180,12 +190,15 @@
         </ul>
       </section>
       <section class="footer-phone">
+        <!-- поменть залоговок на ш2 -->
         <h3 class="visually-hidden">Контактный телефон</h3>
+        <!-- сделать с тег адресс и обернуть в ссылку внести формат телефона -->
         <span class="footer-number">+7 (812) 812-12-12</span>
       </section>
       <section class="footer-logo">
         <h3 class="visually-hidden">Ссылка логотоип HTML Academy</h3>
         <a href="https://vk.com/htmlacademy">
+          <!-- заменить имедж на свг и доабвить спан с вижули хидден -->
           <img class="footer-logo" src="..." alt="Logo HTMLAcademy"
         /></a>
       </section>
