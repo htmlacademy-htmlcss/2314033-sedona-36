@@ -141,13 +141,15 @@
         Только полезная информация и никакого спама, честное бойскаутское!
       </p>
       <form action=" https://echo.htmlacademy.ru/" method="post">
-
-        <!-- связать лейблом надпись -->
-        <input class="subscribe-field" type="email" name="email-field" placeholder="Ваш email" required />
-        <button class="subscribe-button" type="submit">
-          <!-- <span class="visually-hidden">Подписаться</span> -->
-          Подписаться
-        </button>
+        <label>
+          <!-- связать лейблом надпись -->
+          <span class="visually-hidden">Ваш e-mail.</span>
+          <input class="subscribe-field" type="email" name="email-field" placeholder="Ваш email" required />
+          <button class="subscribe-button" type="submit">
+            <span class="visually-hidden">Подписаться.</span>
+            Подписаться
+          </button>
+        </label>
       </form>
     </section>
   </main>
@@ -183,7 +185,7 @@
     <div class="footer-logo">
       <h3 class="visually-hidden">Ссылка логотоип HTML Academy</h3>
       <a href="https://vk.com/htmlacademy">
-        <!-- заменить имедж на свг и доабвить спан на вижули хидден -->
+        <!-- заменить имедж на свг -->
         <img class="footer-logo" src="..." alt="Logo HTMLAcademy" /></a>
     </div>
   </footer>
