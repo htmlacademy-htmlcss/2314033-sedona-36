@@ -30,10 +30,11 @@
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
           <!-- спан сделать с новой строки, на защите ошибка -->
-          <a href="#"><span class="visually-hidden">Поиск</span></a>
+          <a href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
         </li>
         <li class="navigation-item">
-          <!-- добавить спан с цифрой 12 в лайки -->
           <a href="#">
             <span class="visually-hidden">Лайки</span>
             <span class="favourite-numebr">12</span>
@@ -48,18 +49,17 @@
   <main class="main-inner">
     <header class="inner-header">
       <h1 class="inner-title">Гостиницы Седоны</h1>
-      <ul class="breadcrumbs">
-        <!-- сделать 2 списка а не 3, и на главную добавить спан скрытый с описанием-->
+      <ol class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html"><img src="..." alt="home logo picture" /></a>
-        </li>
-        <li class="breadcrumbs-item">
-          <img src="..." alt="You are here logo" />
+          <a class="breadcrumbs-link" href="index.html">
+            <span class="visually-hidden">На главную.</span>
+            <img src="..." alt="home logo picture" />
+          </a>
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link">Гостиницы</a>
         </li>
-      </ul>
+      </ol>
     </header>
     <section class="inner-catalog">
       <h2 class="visually-hidden">Список товаров с фильтрами</h2>
@@ -135,10 +135,17 @@
         <option value="popular">Сначала популярные</option>
       </select>
 
-      <!-- сделать списком -->
-      <a class="button" href="#"><span class="visually-hidden">Показать список</span></a>
-      <a class="button" href="#"><span class="visually-hidden">Показать карточки</span></a>
-      <a class="button" href="#"><span class="visually-hidden">Показать таблицу</span></a>
+      <ul class="display-list">
+        <li class="display-item">
+          <a class="display-button" href="#"><span class="visually-hidden">Показать списком.</span></a>
+        </li>
+        <li class="display-item">
+          <a class="display-button" href="#"><span class="visually-hidden">Показать карточками.</span></a>
+        </li>
+        <li class="display-item">
+          <a class="display-button" href="#"><span class="visually-hidden">Показать таблицами.</span></a>
+        </li>
+      </ul>
 
       <section>
         <ul class="product-card">
@@ -147,50 +154,57 @@
               <img src="..." alt="" />
               <h3>Amara Resort & Spa</h3>
             </a>
-            <!-- сделать 2 элемента гостиница спан цена б -->
-            <b class="product-price">Гостиница От 4000 &#8381;</b>
+            <span class="product-hotel">Гостиница</span>
+            <b class="product-price">От 4000 &#8381;</b>
             <a class="product-link-details" href="#">Подробнее</a>
-            <!-- избранное это кнопка -->
-            <a class="product-link-favourite" href="#">В избранное</a>
-            <img class="product-rating-img" src="..." alt="Raiting photo" />
-            <a class="product-link-raitin" href="#">Рейтинг:8,5</a>
+            <button class="product-button" type="button">В избранное</button>
+            <p class="product-raiting"> *****
+              <span class="visually-hidden">Пять звезд.</span>
+            </p>
+            <p>Рейтинг:8,5</p>
           </li>
           <li class="product-list">
             <a class="product-card-link" href="#">
               <img src="..." alt="" />
               <h3>Villas at Poco Diablo</h3>
             </a>
-            <b class="product-price">Гостиница От 5000 &#8381;</b>
+            <span class="product-hotel">Гостиница</span>
+            <b class="product-price">От 5000 &#8381;</b>
             <a class="product-link-details" href="#">Подробнее</a>
             <!-- добавить класс выбранный  -->
-            <a class="product-link-favourite" href="#">В избранном</a>
-            <!-- звездочки мы оборачиваем в <p></p> и внутрь спан со скрытым названием -->
-            <img class="product-rating-img" src="..." alt="Raiting photo" />
-            <!-- рейтинг тоже можно в параграф -->
-            <a class="product-link-raitin" href="#">Рейтинг:9,2</a>
+            <button class="product-button" type="button">В избранное</button>
+            <p class="product-raiting"> *****
+              <span class="visually-hidden">Пять звезд.</span>
+            </p>
+            <p>Рейтинг:9,2</p>
           </li>
           <li class="product-list">
             <a class="product-card-link" href="#">
               <img src="..." alt="" />
               <h3>Desert Quail Inn</h3>
             </a>
-            <b class="product-price">Гостиница От 2500 &#8381;</b>
+            <span class="product-hotel">Гостиница</span>
+            <b class="product-price">От 2500 &#8381;</b>
             <a class="product-link-details" href="#">Подробнее</a>
-            <a class="product-link-favourite" href="#">В избранное</a>
-            <img class="product-rating-img" src="..." alt="Raiting photo" />
-            <a class="product-link-raitin" href="#">Рейтинг:6,9</a>
+            <button class="product-button" type="button">В избранное</button>
+            <p class="product-raiting"> *****
+              <span class="visually-hidden">Пять звезд.</span>
+            </p>
+            <p>Рейтинг:6,9</p>
           </li>
           <li class="product-list">
             <a class="product-card-link" href="#">
               <img src="..." alt="" />
               <h3>GreenTree Inn</h3>
             </a>
-            <b class="product-price">Гостиница От 1500 &#8381;</b>
+            <span class="product-hotel">Гостиница</span>
+            <b class="product-price">От 1500 &#8381;</b>
             <a class="product-link-details" href="#">Подробнее</a>
-            <!-- В избранное это кнопка, а не ссылка -->
-            <a class="product-link-favourite" href="#">В избранное</a>
-            <img class="product-rating-img" src="..." alt="Raiting photo" />
-            <a class="product-link-raitin" href="#">Рейтинг:5,0</a>
+            <button class="product-button" type="button">В избранное</button>
+            <p class="product-raiting"> *****
+              <span class="visually-hidden">Пять звезд.</span>
+            </p>
+            <p>Рейтинг:5,0</p>
           </li>
         </ul>
         <ul class="pagintaion">
@@ -206,9 +220,9 @@
           <li class="pagination-list">
             <a class="pagination-link" href="#">4</a>
           </li>
-          <!-- в троеточие добавить ссылку и спан с вижуалли хидден след страница -->
           <li class="pagination-list pagination-ellipsis">
-            <span>...</span>
+            <span class="visually-hidden">...</span>
+            <a class="pagination-next-page" href="#">Next page</a>
           </li>
           <li class="pagination-list">
             <a class="pagination-link" href="#">10</a>
