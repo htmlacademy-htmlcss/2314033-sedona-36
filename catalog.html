@@ -34,7 +34,10 @@
         </li>
         <li class="navigation-item">
           <!-- добавить спан с цифрой 12 в лайки -->
-          <a href="#"><span class="visually-hidden">Лайки</span></a>
+          <a href="#">
+            <span class="visually-hidden">Лайки</span>
+            <span class="favourite-numebr">12</span>
+          </a>
         </li>
         <li class="navigation-item">
           <a class="navigation-button" href="catalog.html">Хочу сюда</a>
@@ -109,19 +112,12 @@
           </ul>
         </fieldset>
         <button class="catalog-button" type="submit">Применить</button>
-        <!-- добавить кнопку reset -->
-
-        <!-- <input
-            class="button-catalog"
-            type="submit"
-            name="accept-button"
-            value="Применить"
-          /> -->
+        <button class="catalog-button-reset" type="reset">Сбросить</button>
       </form>
-
+      <!-- возможно следующй раздел каталога обернуть в отдельную секцию -->
       <div>
-        <!-- добавить спан с цифрой кол-ва гостиниц -->
-        <h2>НАЙДЕНО ГОСТИНИЦ</h2>
+        <h2>НАЙДЕНО ГОСТИНИЦ:</h2>
+        <span class="found-hotel">38</span>
       </div>
 
       <select class="select-control" aria-label="Сортировка">
@@ -173,7 +169,7 @@
             <a class="product-link-details" href="#">Подробнее</a>
             <a class="product-link-favourite" href="#">В избранное</a>
             <img class="product-rating-img" src="..." alt="Raiting photo" />
-            <a class="product-link-raitin" href="#">Рейтинг:8,5</a>
+            <a class="product-link-raitin" href="#">Рейтинг:6,9</a>
           </li>
           <li class="product-list">
             <a class="product-card-link" href="#">
@@ -182,9 +178,10 @@
             </a>
             <b class="product-price">Гостиница От 1500 &#8381;</b>
             <a class="product-link-details" href="#">Подробнее</a>
+            <!-- В избранное это кнопка, а не ссылка -->
             <a class="product-link-favourite" href="#">В избранное</a>
             <img class="product-rating-img" src="..." alt="Raiting photo" />
-            <a class="product-link-raitin" href="#">Рейтинг:8,5</a>
+            <a class="product-link-raitin" href="#">Рейтинг:5,0</a>
           </li>
         </ul>
         <ul class="pagintaion">
