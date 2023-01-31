@@ -11,14 +11,13 @@
 
 <body>
   <header class="main-header">
-    <div class="header-logo">
-      <!-- возможно добавить ссылку без хрефа, ведь в каталоге у нас логотип - ссылка -->
+    <a class="header-logo">
       <img src="./images/header/logo.svg" alt="Logo of HTML Academy" width="140" height="70" />
-    </div>
+    </a>
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link-current" href="#">Главная</a>
+          <a class="navigation-link-current">Главная</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">О Седоне</a>
@@ -43,24 +42,23 @@
       </ul>
     </nav>
   </header>
+
   <main class="main-page">
+    <h1 class="visually-hidden">Главная информация по городу Седона.</h1>
     <section class="hero">
-      <h1 class="visually-hidden">Самое главное о прекрасном городе Седона</h1>
-      <div class="hero-picture">
-        <!-- фон jpg мы поменяем и установим в стилях
-        <img class="sedona-logo" src="..." alt="Горы" /> -->
-        <img class="hero-logo" src="./images/hero/welcome.svg"
-          alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" width="458" height="352" />
-        <!-- в ретроспективе картинки сказали 2 фон гор и надпись -->
-      </div>
+      <h2 class="visually-hidden">Приветственный раздел в котором находится картинка и текст о Седоне.</h2>
+      <img class="hero-logo" src="./images/hero/welcome.svg"
+        alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" width="458" height="352" />
     </section>
+
     <section class="advantages">
-      <!-- уделать ш2 заголовок скрытый а все ш3 поменять на параграфы -->
       <h2 class="visually-hidden">Преимущества Седоны</h2>
+
       <div class="greeting-block">
-        <h3 class="greeting-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
+        <p class="greeting-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="greeting-about">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </div>
+
       <ul class="advantages-list">
         <li class="advantages-items">
           <h3 class="advantages-title">Настоящий городок</h3>
@@ -89,12 +87,12 @@
         </li>
       </ul>
     </section>
+
     <section class="service-section">
       <h2 class="visually-hidden">Доп информация по сервису в Седоне</h2>
-      <!-- убрать артикл -->
-      <article class="greeting-article">
-        <h2 class="article-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-        <span class="article-about">Опытный персонал и качественное обслуживание!</span>
+      <div class="greeting-article">
+        <p class="article-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+        <p class="article-about">Опытный персонал и качественное обслуживание!</p>
         <ul class="service-list">
           <li class="service-item">
             <h3 class="service-title">Жилье</h3>
@@ -109,8 +107,9 @@
             <p class="service-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
-      </article>
+      </div>
     </section>
+
     <section class="interested">
       <h2 class="interested-title">Заинтересовались?</h2>
       <p class="iterested-description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц
@@ -131,44 +130,37 @@
     </section>
   </main>
   <footer class="page-footer">
-    <section>
+    <section class="social">
       <h2 class="visually-hidden">Список социальных сетей</h2>
-      <ul class="social">
+      <ul class="social-list">
         <li class="social-item">
           <!-- картинка инлайновая тегом svg а не img -->
           <a class="social-link" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Ссылка-логотип социальной сети ВКонтакте.</span>
-            <img class="social-img" src="..." alt="VK logo" />
           </a>
         </li>
         <li class="social-item">
           <a class="social-link" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Ссылка-логотип мессенджера Телеграм.</span>
-            <img class="social-img" src="..." alt="Telegram logo" />
           </a>
         </li>
         <li class="social-item">
           <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Ссылка-логотип мессенджера Телеграм.</span>
-            <!-- удалить все имедж будут стили -->
-            <img class="social-img" src="..." alt="YouTube logo" />
           </a>
         </li>
       </ul>
     </section>
-    <!-- убрать у жива или заголовок или убрать див и сделать adress -->
-    <div class="footer-phone">
+    <section class="footer-phone">
       <h2 class="visually-hidden">Контактный телефон</h2>
       <a class="footer-number" href="tel:+78128121212">+7 812 812-12-12</a>
-    </div>
-    <div class="footer-logo">
-      <h3 class="visually-hidden">Ссылка логотоип HTML Academy</h3>
-      <a href="https://vk.com/htmlacademy">
-        <!-- lобавить спан с вижуалли хидден -->
-        <!-- заменить имедж на свг -->
-        <img class="footer-logo" src="./images/footer/academy-logo.svg" alt="Логотип сайта академии HTML." width="115"
-          height="33" /></a>
-    </div>
+    </section>
+    <section class="footer-logo">
+      <h2 class="visually-hidden">Ссылка логотоип HTML Academy</h2>
+      <a href="https://htmlacademy.ru">
+        <img class="footer-logo" src="./images/footer/academy-logo.svg"
+          alt="Логотип сайта академии HTML который ведет на сайт компании" width="115" height="33" /></a>
+    </section>
   </footer>
 </body>
 
