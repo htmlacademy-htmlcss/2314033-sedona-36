@@ -15,8 +15,116 @@
 
 body{
   font-family: 'PT Sans', sans-serif;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 21px;
   background-color: #FFFFFF;
   color: #000000;
+  width:1200px;
+
 }
+
+
+.navigation-list {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  list-style-type: none;
+
+}
+
+.navigation-link {
+  text-decoration: none;
+}
+
+.navigation-button{
+  background: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.hero {
+  background: url(../images/hero/index-background.jpg);
+  width: 100%;
+  height: 485px;
+
+}
+
+
+
+.greeting-title{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.greeting-about {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.color-description {
+  color: #333333;
+}
+
+.advantages-list {
+  list-style-type: none;
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-title{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.advantages-description{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+}
+
+.picture {
+  color: #FFFFFF;
+  background: #82B3D3;
+}
+.darkblue {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.service-list {
+  background: rgba(131, 179, 211, 0.12);
+
+}
+
+.service-list {
+  list-style-type: none;
+}
+
+.interested-button {
+  background: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+
+}
+
+.subscribe {
+  display: block;
+  width: 100%;
+  height: 415px;
+  background:#82B3D3 url(../images/main/Subscribe.jpg);
+  color: #FFFFFF;
+}
+
+
