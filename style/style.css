@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/ptsans-400.woff2) format('woff2');
+  font-display: swap;
+}
+@font-face{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/ptsans-700.woff2) format('woff2');
+  font-display: swap;
+}
+
+body{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  background-color: #FFFFFF;
+  color: #000000;
+}
