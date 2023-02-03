@@ -23,6 +23,12 @@ body{
 
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -70,9 +76,21 @@ body{
 }
 
 .hero {
-  background: #82B3D3 url(../images/hero/index-background.jpg) center no-repeat;
+  background-image: url(../images/hero/index-background.jpg);
+  background-color: #82B3D3;
+  background-size: cover;
+  height: 485px;
+  position: relative;
+
 
 }
+.hero-logo-bottom{
+  background-image: url(../images/hero/Vector-background.svg);
+  background-repeat: no-repeat;
+  height: 57px;
+
+}
+
 
 .greeting-title{
   font-weight: 700;
@@ -192,3 +210,43 @@ body{
 
 
 
+
+.inner-catalog {
+  background-image: url(../images/catalog/filter.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.search {
+  display: flex;
+}
+
+.found-hotel {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.product-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-list {
+  list-style-type: none;
+  width: 340px;
+  height: 438px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+}
+
+.product-card-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
