@@ -165,176 +165,6 @@ body{
   line-height: 36px;
   color: #FFFFFF;
 }
-/* .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-} */
-
-/* .main-header {
-  width: 100%;
-  height: 64px;
-  display: block;
-} */
-
-/* .navigation {
-  position: relative;
-  margin: 0 auto;
-  width: 1060px;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.navigation-list{
-  list-style-type: none;
-}
-
-.navigation-link {
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  color: #000000;
-}
-
-.navigation-button{
-
-  background: #756157;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  padding: 8px 50px;
-  border-radius: 4px;
-
-}
-
-.hero {
-  background: url(../images/hero/index-background.jpg);
-  width: 100%;
-  height: 485px;
-
-}
-
-
-
-.greeting-title{
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.greeting-about {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
-}
-
-.color-description {
-  color: #333333;
-}
-
-.advantages-list {
-  list-style-type: none;
-  padding-left: 0;
-  background: rgba(131, 179, 211, 0.12);
-}
-
-.advantages-title{
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  text-transform: uppercase;
-
-}
-
-.advantages-description{
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-
-}
-
-.picture {
-  color: #FFFFFF;
-  background: #82B3D3;
-}
-.darkblue {
-  background: rgba(131, 179, 211, 0.2);
-}
-
-.service-list {
-  background: rgba(131, 179, 211, 0.12);
-  display: flex;
-}
-
-.service-list {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-
-.interested-button {
-  background: #756157;
-  border-radius: 4px;
-  padding: 8px 50px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  text-align: center;
-
-}
-
-.subscribe {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 415px;
-  background:#82B3D3 url(../images/main/Subscribe.jpg);
-  color: #FFFFFF;
-}
-
-.subscribe-button {
-  font-family: inherit;
-  user-select: none;
-  cursor: pointer;
-  border: none;
-  text-decoration: none;
-  text-transform: uppercase;
-  background: #82B3D3;
-  border-radius: 0px 4px 4px 0px;
-  padding: 8px 50px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  color: #FFFFFF;
-}
-
-.page-footer {
-  display: block;
-  width: 100%;
-  height: 120px;
-  position: relative;
-}
 
 .footer-container {
   width: 1060px;
@@ -345,10 +175,6 @@ body{
 
 }
 
-.social-list {
-  display: flex;
-}
-
 .footer-number {
   text-decoration: none;
   font-weight: 400;
@@ -357,6 +183,12 @@ body{
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-} */
+}
+
+.service-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 
 
