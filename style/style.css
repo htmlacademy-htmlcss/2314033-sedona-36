@@ -19,16 +19,152 @@ body{
   line-height: 21px;
   background-color: #f2f2f2;
   color: #000000;
+  margin: 0;
 
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-container {
-  display: block;
+  background-color: #FFFFFF;
   margin: 0 auto;
   width: 1200px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
+
+.navigation-link {
+
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.navigation-link-user {
+  text-decoration: none;
+}
+
+.navigation-button {
+  background: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  padding: 8px 50px;
+  border-radius: 4px;
+}
+
+.hero {
+  background: #82B3D3 url(../images/hero/index-background.jpg) center no-repeat;
+
+}
+
+.greeting-title{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.greeting-about {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.color-description {
+  color: #333333;
+}
+
+.advantages-list {
+  list-style-type: none;
+  padding-left: 0;
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-title{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.advantages-description{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+}
+
+.picture {
+  color: #FFFFFF;
+  background: #82B3D3;
+}
+
+.darkblue {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+
+.service-list {
+  list-style-type: none;
+  padding-left: 0;
+  background: rgba(131, 179, 211, 0.12);
+  display: flex;
+}
+
+.interested-button {
+  background: #756157;
+  border-radius: 4px;
+  padding: 8px 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+
+}
+
+.subscribe {
+  background:#82B3D3 url(../images/main/Subscribe.jpg) center no-repeat;
+  color: #FFFFFF;
+}
+
+.subscribe-button {
+  font-family: inherit;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #82B3D3;
+  border-radius: 0px 4px 4px 0px;
+  padding: 8px 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
 /* .visually-hidden {
   position: absolute;
   width: 1px;
@@ -48,7 +184,7 @@ body{
   display: block;
 } */
 
-.navigation {
+/* .navigation {
   position: relative;
   margin: 0 auto;
   width: 1060px;
@@ -85,7 +221,6 @@ body{
 }
 
 .hero {
-  position: relative;
   background: url(../images/hero/index-background.jpg);
   width: 100%;
   height: 485px;
@@ -222,6 +357,6 @@ body{
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-}
+} */
 
 
