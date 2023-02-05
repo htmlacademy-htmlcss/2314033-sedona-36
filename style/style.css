@@ -208,13 +208,38 @@ img {
   padding-left: 0;
 }
 
-
-
-
 .inner-catalog {
   background-image: url(../images/catalog/filter.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+
+.inner-title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.catalog-filter-item{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.breadcrumbs-link{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+
+.catalog-filter-title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .search {
@@ -249,4 +274,70 @@ img {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+}
+
+.product-title{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.product-price{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+}
+
+.product-link-details{
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #756157;
+  border-radius: 4px;
+  padding: 8px 50px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.product-button{
+  font-family: inherit;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #82B3D3;
+  border-radius: 4px;
+  padding: 8px 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.current{
+  background: #7DB54F;
+}
+
+.hotel-raiting {
+  width: fit-content;
+  padding: 9px 22px 8px 23px;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  background-color: #F2F2F2;
+}
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+}
+
+.pagination-link {
+  ва
 }

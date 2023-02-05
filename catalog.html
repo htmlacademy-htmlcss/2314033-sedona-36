@@ -65,6 +65,7 @@
             </li>
           </ol>
         </section>
+
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-goup">
             <legend class="catalog-filter-title">Инфраструктура</legend>
@@ -113,19 +114,21 @@
               </li>
             </ul>
           </fieldset>
+
           <fieldset class="catalog-filter-goup">
             <legend class="catalog-filter-title">Стоимость,&#8381;</legend>
             <input type="text" name="max-sum">
             <input type="text" name="min-sum">
             <input type="range" name="max-volume">
             <input type="range" name="max-volume">
-
-            <button class="catalog-button" type="submit">Применить</button>
-            <button class="catalog-button-reset" type="reset">Сбросить</button>
           </fieldset>
 
-
+          <div class="catalog-buttons">
+            <button class="catalog-apply" type="submit">Применить</button>
+            <button class="catalog-reset" type="reset">Сбросить</button>
+          </div>
         </form>
+
       </section>
       <!-- возможно следующй раздел каталога обернуть в отдельную секцию -->
       <section class="search">
@@ -158,67 +161,67 @@
           <li class="product-list">
             <a class="product-card-link" href="#">
               <img src="./images/catalog/hotel-1.jpg" alt="Вид на звездное небо из пещеры." width="300" height="212" />
-              <h3>Amara Resort & Spa</h3>
+              <h3 class="product-title">Amara Resort & Spa</h3>
             </a>
             <span class="product-hotel">Гостиница</span>
             <b class="product-price">От 4000 &#8381;</b>
             <a class="product-link-details" href="#">Подробнее</a>
             <button class="product-button" type="button">В избранное</button>
-            <p class="product-raiting"> *****
-              <span class="visually-hidden">Пять звезд.</span>
+            <p class="product-raiting">
+              <span class="visually-hidden">Четыре звезды.</span>
             </p>
-            <p>Рейтинг:8,5</p>
+            <p class="hotel-raiting">Рейтинг:8,5</p>
           </li>
           <li class="product-list">
             <a class="product-card-link" href="#">
               <img src="./images/catalog/hotel-2.jpg"
                 alt="Вид на гору на фоне туч, через которые пробивается луч солнца и радуги." width="300"
                 height="212" />
-              <h3>Villas at Poco Diablo</h3>
+              <h3 class="product-title">Villas at Poco Diablo</h3>
             </a>
             <span class="product-hotel">Гостиница</span>
             <b class="product-price">От 5000 &#8381;</b>
             <a class="product-link-details" href="#">Подробнее</a>
             <!-- добавить класс выбранный  -->
-            <button class="product-button" type="button">В избранное</button>
-            <p class="product-raiting"> *****
-              <span class="visually-hidden">Пять звезд.</span>
+            <button class="product-button current" type="button">В избранном</button>
+            <p class="product-raiting">
+              <span class="visually-hidden">Четыре звезды.</span>
             </p>
-            <p>Рейтинг:9,2</p>
+            <span class="hotel-raiting">Рейтинг:9,2</span>
           </li>
           <li class="product-list">
             <a class="product-card-link" href="#">
               <img src="./images/catalog/hotel-3.jpg" alt="Вид на гору на фоне ясного голубого неба" width="300"
                 height="212" />
-              <h3>Desert Quail Inn</h3>
+              <h3 class="product-title">Desert Quail Inn</h3>
             </a>
             <span class="product-hotel">Гостиница</span>
             <b class="product-price">От 2500 &#8381;</b>
             <a class="product-link-details" href="#">Подробнее</a>
             <button class="product-button" type="button">В избранное</button>
-            <p class="product-raiting"> *****
-              <span class="visually-hidden">Пять звезд.</span>
+            <p class="product-raiting">
+              <span class="visually-hidden">Три звезды.</span>
             </p>
-            <p>Рейтинг:6,9</p>
+            <p class="hotel-raiting">Рейтинг:6,9</p>
           </li>
           <li class="product-list">
             <a class="product-card-link" href="#">
               <img src="./images/catalog/hotel-4.jpg"
                 alt="Вид на гору на фоне звезд, позади которой закат и всё в оранжевых тонах" width="300"
                 height="200" />
-              <h3>GreenTree Inn</h3>
+              <h3 class="product-title">GreenTree Inn</h3>
             </a>
             <span class="product-hotel">Гостиница</span>
             <b class="product-price">От 1500 &#8381;</b>
             <a class="product-link-details" href="#">Подробнее</a>
             <button class="product-button" type="button">В избранное</button>
-            <p class="product-raiting"> *****
-              <span class="visually-hidden">Пять звезд.</span>
+            <p class="product-raiting">
+              <span class="visually-hidden">Две звезды.</span>
             </p>
-            <p>Рейтинг:5,0</p>
+            <p class="hotel-raiting">Рейтинг:5,0</p>
           </li>
         </ul>
-        <ul class="pagintaion">
+        <ul class="pagination">
           <li class="pagination-list">
             <a class="pagination-link pagination-current" href="#">1</a>
           </li>
