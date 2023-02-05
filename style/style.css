@@ -63,6 +63,11 @@ img {
   text-decoration: none;
 }
 
+.navigation-link-search{
+  background-image: url(../images/header/search.svg);
+
+}
+
 .navigation-button {
   background: #756157;
   text-decoration: none;
@@ -77,21 +82,20 @@ img {
 }
 
 .hero {
-  background-image: url(../images/hero/index-background.jpg);
+  background-image:url(../images/hero/Vector-background.svg), url(../images/hero/index-background.jpg);
   background-color: #82B3D3;
-  background-size: cover;
+  background-position: bottom center, center center;
+  background-repeat: no-repeat;
   height: 485px;
-  position: relative;
-
 
 }
 
-.hero-logo-bottom {
+/* .hero-logo-bottom {
   background-image: url(../images/hero/Vector-background.svg);
   background-repeat: no-repeat;
   height: 57px;
 
-}
+} */
 
 
 .greeting-title {
@@ -167,6 +171,8 @@ img {
 .subscribe {
   background: #82B3D3 url(../images/main/Subscribe.jpg) center no-repeat;
   color: #FFFFFF;
+  width: 100%;
+  height: 415px;
 }
 
 .subscribe-button {
