@@ -13,6 +13,12 @@
   src: url(../fonts/ptsans-700.woff2) format('woff2');
   font-display: swap;
 }
+/*
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
 
 body {
   font-family: 'PT Sans', sans-serif;
@@ -143,6 +149,10 @@ img {
 .picture {
   color: #FFFFFF;
   background: #82B3D3;
+}
+
+.advantage-image{
+  display: block;
 }
 
 .darkblue {
