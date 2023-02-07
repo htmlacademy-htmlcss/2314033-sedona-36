@@ -2,7 +2,7 @@
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/ptsans-400.woff2) format('woff2');
+  src: url("../fonts/ptsans-400.woff2") format('woff2');
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/ptsans-700.woff2) format('woff2');
+  src: url("../fonts/ptsans-700.woff2") format('woff2');
   font-display: swap;
 }
 /*
@@ -70,7 +70,7 @@ img {
 }
 
 .navigation-link-search{
-  background-image: url(../images/header/search.svg);
+  background-image: url("../images/header/search.svg");
 
 }
 
@@ -88,7 +88,7 @@ img {
 }
 
 .hero {
-  background-image:url(../images/hero/Vector-background.svg), url(../images/hero/index-background.jpg);
+  background-image:url("../images/hero/Vector-background.svg"), url("../images/hero/index-background.jpg");
   background-color: #82B3D3;
   background-position: bottom, center;
   background-repeat: no-repeat;
@@ -127,9 +127,8 @@ img {
 }
 
 .advantages-list {
-  list-style-type: none;
+  list-style: none;
   padding-left: 0;
-  background: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-title {
@@ -146,12 +145,16 @@ img {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+}
 
+.advantages-items {
+  background-color: rgba(131, 179, 211, 0.12);
+  color: #000000;
 }
 
 .picture {
   color: #FFFFFF;
-  background: #82B3D3;
+  background-color: #82B3D3;
 }
 
 .advantage-image{
@@ -164,7 +167,7 @@ img {
 
 
 .service-list {
-  list-style-type: none;
+  list-style: none;
   padding-left: 0;
   background: rgba(131, 179, 211, 0.12);
   display: flex;
@@ -182,7 +185,7 @@ img {
 }
 
 .subscribe {
-  background: #82B3D3 url(../images/main/Subscribe.jpg) center no-repeat;
+  background: #82B3D3 url("../images/main/Subscribe.jpg") center no-repeat;
   color: #FFFFFF;
   width: 100%;
   height: 415px;
@@ -227,12 +230,12 @@ img {
 }
 
 .service-list {
-  list-style-type: none;
+  list-style: none;
   padding-left: 0;
 }
 
 .inner-catalog {
-  background-image: url(../images/catalog/filter.jpg);
+  background-image: url("../images/catalog/filter.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: #FFFFFF;
@@ -317,7 +320,7 @@ img {
 }
 
 .product-list {
-  list-style-type: none;
+  list-style: none;
   width: 340px;
   height: 438px;
   border: 1px solid #E6E6E6;
@@ -391,7 +394,7 @@ img {
 }
 
 .pagination {
-  list-style-type: none;
+  list-style: none;
 }
 
 .pagination-link {
