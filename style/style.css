@@ -115,16 +115,19 @@ img {
 
 .hero {
   background-image:url("../images/hero/Vector-background.svg"), url("../images/hero/index-background.jpg");
-  background-color: #82B3D3;
+  background-color: #688fa9;
   background-position: bottom, center;
   background-repeat: no-repeat;
   background-size: auto;
-  text-align: center;
-  min-height: 485px;
+  height: 485px;
 }
 
 .hero-logo {
-  padding-top: 51px;
+  display: block;
+  
+  margin: 51px auto;
+
+
 }
 
 /* .greeting-block {
