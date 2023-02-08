@@ -447,6 +447,7 @@ img {
 .product-card {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   margin: 0;
   padding: 0;
 }
@@ -457,6 +458,10 @@ img {
   height: 438px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
+}
+
+.card-wrapper{
+  padding: 20px;
 }
 
 .product-card-link {
@@ -471,6 +476,7 @@ img {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  margin: 0;
 }
 
 .product-price {
@@ -527,6 +533,10 @@ img {
 
 .pagination {
   list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+
 }
 
 .pagination-link {
