@@ -30,8 +30,6 @@ body {
   background-color: #f2f2f2;
   color: #000000;
   margin: 0;
-
-
 }
 
 img {
@@ -61,6 +59,7 @@ img {
   min-height: 100%;
 }
 
+/* HEADER */
 .navigation {
   display: flex;
   width: 100%;
@@ -109,6 +108,8 @@ img {
   border-radius: 4px;
 }
 
+/* MAIN */
+
 .main-page{
   flex-grow: 1;
 }
@@ -119,28 +120,25 @@ img {
   background-position: bottom, center;
   background-repeat: no-repeat;
   background-size: auto;
-  height: 485px;
+  min-height: 485px;
+  padding-top: 51px;
 }
 
 .hero-logo {
   display: block;
-  
-  margin: 51px auto;
-
+  margin: 0 auto;
 
 }
 
-/* .greeting-block {
-  width: 100%;
+.greeting-block{
   height: 261px;
-} */
-
+  text-align: center;
+}
 
 .greeting-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -148,23 +146,16 @@ img {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
 }
 
 .color-description {
   color: #333333;
 }
 
-.advantages-list {
-  list-style: none;
-  padding-left: 0;
-}
-
 .advantages-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  text-align: center;
   text-transform: uppercase;
 
 }
@@ -173,12 +164,24 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+}
+
+.advantages-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .advantages-items {
   background-color: rgba(131, 179, 211, 0.12);
   color: #000000;
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  height: 385px;
 }
 
 .picture {
@@ -194,12 +197,37 @@ img {
   background: rgba(131, 179, 211, 0.2);
 }
 
+.service-section {
+  text-align: center;
+}
+
+.service-greeting {
+  width: 100%;
+  height: 246px;
+}
 
 .service-list {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
   background: rgba(131, 179, 211, 0.12);
   display: flex;
+}
+
+.service-item {
+  width: 400px;
+  height: 385px;
+}
+
+.interested {
+  width: 100%;
+  height: 406px;
+  padding: 96px 304px;
+}
+
+.interested-block{
+  width: 592px;
+  height: 214px;
 }
 
 .interested-button {
@@ -221,6 +249,12 @@ img {
   color: #FFFFFF;
   width: 100%;
   min-height: 415px;
+}
+
+.subscribe-block {
+
+  height: 215px;
+
 }
 
 .subscribe-field {
@@ -254,6 +288,7 @@ img {
   color: #FFFFFF;
 }
 
+/* FOOTER */
 .footer-container {
   width: 100%;
   height: 120px;
@@ -271,11 +306,6 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-}
-
-.service-list {
-  list-style: none;
-  padding-left: 0;
 }
 
 .inner-catalog {
