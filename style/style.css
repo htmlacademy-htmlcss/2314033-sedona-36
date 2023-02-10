@@ -142,8 +142,9 @@ img {
   text-align: center;
   padding: 69px 270px;
 }
-.first-title{
-  padding-bottom: 5px;
+
+.greeting-block .greeting-title{
+  margin-bottom: 25px;
 }
 
 .greeting-title {
@@ -244,8 +245,8 @@ img {
 
 .service-item {
   width: 400px;
-  height: 385px;
   text-align: center;
+  padding: 81px 85px;
 }
 
 .interested {
@@ -277,12 +278,8 @@ img {
   color: #FFFFFF;
   width: 100%;
   min-height: 415px;
-}
-
-.subscribe-block {
-
-  height: 215px;
-
+  padding: 96px 258px 104px;
+  text-align: center;
 }
 
 .subscribe-field {
@@ -297,6 +294,7 @@ img {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  padding-left: 20px;
 }
 
 .subscribe-button {
@@ -314,6 +312,11 @@ img {
   font-size: 20px;
   line-height: 36px;
   color: #FFFFFF;
+  margin-left: -5px;
+}
+
+.subscribe .greeting-about{
+  margin-bottom: 54px;
 }
 
 /* FOOTER */
