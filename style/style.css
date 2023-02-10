@@ -69,6 +69,7 @@ img {
   justify-content: space-between;
   width: 1060px;
   margin: 0 auto;
+  min-height: 64px;
 }
 
 .main-navigation {
@@ -82,6 +83,10 @@ img {
   width: 450px;
   display: flex;
   align-items: center;
+}
+
+.navigation-item{
+  display: block;
 }
 
 .navigation-user {
@@ -130,7 +135,7 @@ img {
   background-repeat: no-repeat;
   background-size: auto;
   min-height: 485px;
-  padding-top: 51px;
+  padding: 51px 371px 82px;
 }
 
 .hero-logo {
@@ -322,16 +327,10 @@ img {
 /* FOOTER */
 .page-footer{
   width: 100%;
-  height: 120px;
+  min-height: 120px;
   margin: 0 auto;
-
-}
-
-.footer-container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 40px 70px 30px;
   display: flex;
+  padding: 40px 70px 30px;
   justify-content: space-between;
 
 }
