@@ -74,6 +74,11 @@ img {
 
 .main-navigation {
   display: flex;
+  align-items: center;
+}
+
+.logo-picture{
+  display: block;
 }
 
 .navigation-list {
@@ -85,13 +90,8 @@ img {
   align-items: center;
 }
 
-.navigation-item{
-  display: block;
-}
-
 .navigation-user {
   text-decoration: none;
-  width: 300px;
   justify-content: flex-end;
 }
 
@@ -103,10 +103,13 @@ img {
   line-height: 24px;
   color: #000000;
   padding: 20px 16px;
+  display: block;
 }
 
 .navigation-link-user{
   padding: 22px 12px;
+  display: block;
+
 }
 
 .navigation-button {
@@ -118,8 +121,11 @@ img {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  padding: 8px 35px;
+  padding: 8px 34.5px;
   border-radius: 4px;
+  display: block;
+  max-width: 300px;
+
 }
 
 /* MAIN */
@@ -129,7 +135,7 @@ img {
 }
 
 .hero {
-  background-image:url("../images/hero/Vector-background.svg"), url("../images/hero/index-background.jpg");
+  background-image:url("../images/hero/vector-background.svg"), url("../images/hero/index-background.jpg");
   background-color: #688fa9;
   background-position: bottom, center;
   background-repeat: no-repeat;
@@ -210,7 +216,7 @@ img {
   padding: 102px 85px;
   text-align: center;
   width: 400px;
-  height: 385px;
+  min-height: 385px;
 }
 
 .picture {
@@ -265,13 +271,16 @@ img {
   text-align: center;
   background: #756157;
   border-radius: 4px;
-  padding: 8px 50px;
+  padding: 8px 49px;
   text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
   text-transform: uppercase;
   color: #FFFFFF;
   display: block;
-  width: 375px;
-  height: 52px;
+  max-width: 375px;
+  min-height: 52px;
   margin: 54px auto 0;
 }
 
@@ -317,7 +326,10 @@ img {
   font-size: 20px;
   line-height: 36px;
   color: #FFFFFF;
-  margin-left: -5px;
+}
+
+.form-wrapper{
+  display: flex;
 }
 
 .subscribe .greeting-about{
