@@ -289,6 +289,7 @@ img {
   background-image: url("../images/main/Subscribe.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   color: #FFFFFF;
   width: 100%;
   min-height: 415px;
@@ -326,6 +327,7 @@ img {
   font-size: 20px;
   line-height: 36px;
   color: #FFFFFF;
+  max-width: 350px;
 }
 
 .form-wrapper{
@@ -338,6 +340,7 @@ img {
 
 /* FOOTER */
 .page-footer{
+  align-items: center;
   width: 100%;
   min-height: 120px;
   margin: 0 auto;
@@ -349,20 +352,28 @@ img {
 
 .social-list{
   display: flex;
+  min-height: 40px;
+  width: 142px;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-
-.social{
-  width:150px;
+.social-link{
+  display: block;
 }
 
 .footer-phone{
-  width: 340px;
+  max-width: 340px;
+  min-height: 40px;
 }
 
 .footer-logo{
-  width: 115px;
+  max-width: 150px;
+  min-height: 33px;
 }
 .footer-number {
   text-decoration: none;
