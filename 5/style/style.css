@@ -136,13 +136,14 @@ img {
 .hero-logo {
   display: block;
   margin: 0 auto;
-
 }
 
 .greeting-block{
   height: 261px;
   text-align: center;
 }
+
+
 
 .greeting-title {
   font-weight: 700;
@@ -173,6 +174,11 @@ img {
 
 }
 
+.advantage-picture-text{
+  padding: 102px 85px;
+  text-align: center;
+}
+
 .advantages-description {
   font-weight: 400;
   font-size: 18px;
@@ -193,7 +199,8 @@ img {
   background-color: rgba(131, 179, 211, 0.12);
   color: #000000;
   margin: 0;
-  padding: 0;
+  padding: 102px 85px;
+  text-align: center;
   width: 400px;
   height: 385px;
 }
@@ -203,6 +210,7 @@ img {
   background-color: #82B3D3;
   display: flex;
   width: 100%;
+  padding: 0;
 
 }
 
@@ -218,9 +226,22 @@ img {
   text-align: center;
 }
 
+
+
 .service-greeting {
   width: 100%;
   height: 246px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* посто эксперементальный класс для центровки
+позже после след раздела удалить */
+.service-title{
+  width: 505px;
 }
 
 .service-list {
@@ -234,6 +255,7 @@ img {
 .service-item {
   width: 400px;
   height: 385px;
+  text-align: center;
 }
 
 .interested {
