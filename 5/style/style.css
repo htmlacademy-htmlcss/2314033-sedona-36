@@ -69,10 +69,16 @@ img {
   justify-content: space-between;
   width: 1060px;
   margin: 0 auto;
+  min-height: 64px;
 }
 
 .main-navigation {
   display: flex;
+  align-items: center;
+}
+
+.logo-picture{
+  display: block;
 }
 
 .navigation-list {
@@ -86,7 +92,6 @@ img {
 
 .navigation-user {
   text-decoration: none;
-  width: 300px;
   justify-content: flex-end;
 }
 
@@ -98,10 +103,13 @@ img {
   line-height: 24px;
   color: #000000;
   padding: 20px 16px;
+  display: block;
 }
 
 .navigation-link-user{
   padding: 22px 12px;
+  display: block;
+
 }
 
 .navigation-button {
@@ -113,8 +121,11 @@ img {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  padding: 8px 35px;
+  padding: 8px 34.5px;
   border-radius: 4px;
+  display: block;
+  max-width: 300px;
+
 }
 
 /* MAIN */
@@ -124,13 +135,13 @@ img {
 }
 
 .hero {
-  background-image:url("../images/hero/Vector-background.svg"), url("../images/hero/index-background.jpg");
+  background-image:url("../images/hero/vector-background.svg"), url("../images/hero/index-background.jpg");
   background-color: #688fa9;
   background-position: bottom, center;
   background-repeat: no-repeat;
   background-size: auto;
   min-height: 485px;
-  padding-top: 51px;
+  padding: 51px 371px 82px;
 }
 
 .hero-logo {
@@ -205,7 +216,7 @@ img {
   padding: 102px 85px;
   text-align: center;
   width: 400px;
-  height: 385px;
+  min-height: 385px;
 }
 
 .picture {
@@ -260,13 +271,16 @@ img {
   text-align: center;
   background: #756157;
   border-radius: 4px;
-  padding: 8px 50px;
+  padding: 8px 49px;
   text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
   text-transform: uppercase;
   color: #FFFFFF;
   display: block;
-  width: 375px;
-  height: 52px;
+  max-width: 375px;
+  min-height: 52px;
   margin: 54px auto 0;
 }
 
@@ -275,6 +289,7 @@ img {
   background-image: url("../images/main/Subscribe.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   color: #FFFFFF;
   width: 100%;
   min-height: 415px;
@@ -312,7 +327,11 @@ img {
   font-size: 20px;
   line-height: 36px;
   color: #FFFFFF;
-  margin-left: -5px;
+  max-width: 350px;
+}
+
+.form-wrapper{
+  display: flex;
 }
 
 .subscribe .greeting-about{
@@ -321,37 +340,40 @@ img {
 
 /* FOOTER */
 .page-footer{
+  align-items: center;
   width: 100%;
-  height: 120px;
+  min-height: 120px;
   margin: 0 auto;
-
-}
-
-.footer-container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 40px 70px 30px;
   display: flex;
+  padding: 40px 70px 30px;
   justify-content: space-between;
 
 }
 
 .social-list{
   display: flex;
+  min-height: 40px;
+  width: 142px;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-
-.social{
-  width:150px;
+.social-link{
+  display: block;
 }
 
 .footer-phone{
-  width: 340px;
+  max-width: 340px;
+  min-height: 40px;
 }
 
 .footer-logo{
-  width: 115px;
+  max-width: 150px;
+  min-height: 33px;
 }
 .footer-number {
   text-decoration: none;
