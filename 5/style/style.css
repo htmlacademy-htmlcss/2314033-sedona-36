@@ -139,11 +139,13 @@ img {
 }
 
 .greeting-block{
-  height: 261px;
   text-align: center;
+  padding: 69px 270px;
 }
 
-
+.greeting-block .greeting-title{
+  margin-bottom: 25px;
+}
 
 .greeting-title {
   font-weight: 700;
@@ -151,7 +153,7 @@ img {
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
-
+  margin-bottom: 20px;
 }
 
 .greeting-about {
@@ -171,6 +173,7 @@ img {
   line-height: 28px;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 62px;
 
 }
 
@@ -226,22 +229,10 @@ img {
   text-align: center;
 }
 
-
-
 .service-greeting {
   width: 100%;
-  height: 246px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
+  padding: 64px 350px;
 
-/* посто эксперементальный класс для центровки
-позже после след раздела удалить */
-.service-title{
-  width: 505px;
 }
 
 .service-list {
@@ -254,19 +245,14 @@ img {
 
 .service-item {
   width: 400px;
-  height: 385px;
   text-align: center;
+  padding: 81px 85px;
 }
 
 .interested {
   width: 100%;
-  height: 406px;
   padding: 96px 304px;
-}
-
-.interested-block{
-  width: 592px;
-  height: 214px;
+  text-align: center;
 }
 
 .interested-button {
@@ -278,6 +264,10 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   color: #FFFFFF;
+  display: block;
+  width: 375px;
+  height: 52px;
+  margin: 54px auto 0;
 }
 
 .subscribe {
@@ -288,12 +278,8 @@ img {
   color: #FFFFFF;
   width: 100%;
   min-height: 415px;
-}
-
-.subscribe-block {
-
-  height: 215px;
-
+  padding: 96px 258px 104px;
+  text-align: center;
 }
 
 .subscribe-field {
@@ -308,6 +294,7 @@ img {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  padding-left: 20px;
 }
 
 .subscribe-button {
@@ -325,6 +312,11 @@ img {
   font-size: 20px;
   line-height: 36px;
   color: #FFFFFF;
+  margin-left: -5px;
+}
+
+.subscribe .greeting-about{
+  margin-bottom: 54px;
 }
 
 /* FOOTER */
