@@ -680,6 +680,7 @@ img {
   color: #FFFFFF;
   display: block;
   padding: 12px 24px;
+  min-width: 60px;
 
 
 }
