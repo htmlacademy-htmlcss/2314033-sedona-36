@@ -645,11 +645,17 @@ img {
   line-height: 36px;
   color: #FFFFFF;
   display: block;
-  padding: 12px 24px;
+  padding: 11.42px 24.5px;
+
 
 }
 
 .pagination-current {
   background-color: #F2F2F2;
+  color: #000000;
+}
+
+.next-page {
+  background-color: transparent;
   color: #000000;
 }
