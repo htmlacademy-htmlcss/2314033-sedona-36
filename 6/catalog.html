@@ -128,10 +128,8 @@
 
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость,&#8381;</legend>
-            <input class="catalog-sum" type="text" name="max-sum">
-            <input class="catalog-sum" type="text" name="min-sum">
-            <input type="range" name="max-volume">
-            <input type="range" name="max-volume">
+            <input class="catalog-max" type="text" name="max-sum" placeholder="от" >
+            <input class="catalog-min" type="text" name="min-sum" placeholder="до">
           </fieldset>
 
           <div class="catalog-buttons">
@@ -247,7 +245,7 @@
           <h3 class="visually-hidden">Пагинация страницы поиска.</h3>
           <ul class="pagination">
             <li class="pagination-list">
-              <a class="pagination-link pagination-current" href="#">1</a>
+              <a class="pagination-link pagination-current">1</a>
             </li>
             <li class="pagination-list">
               <a class="pagination-link" href="#">2</a>
@@ -260,7 +258,7 @@
             </li>
             <li class="pagination-list pagination-ellipsis">
               <span class="visually-hidden">Следующая страница.</span>
-              <a class="pagination-next-page" href="#">...</a>
+              <a class="pagination-link next-page" href="#">...</a>
             </li>
             <li class="pagination-list">
               <a class="pagination-link" href="#">10</a>

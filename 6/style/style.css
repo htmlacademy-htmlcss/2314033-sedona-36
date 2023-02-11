@@ -430,12 +430,19 @@ img {
 
 .catalog-filter{
   display: flex;
+  justify-content: space-between;
+  align-items: end;
 }
 
 .catalog-filter-group{
   border: none;
   padding: 0;
   margin: 0;
+}
+
+.catalog-buttons{
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-filter-title {
@@ -456,7 +463,33 @@ img {
   line-height: 23px;
 }
 
-.catalog-sum{
+.catalog-max{
+  width: 143px;
+  height: 48px;
+  background: #F2F2F2;
+  border: none;
+  border-radius: 4px 0px 0px 4px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 0;
+
+}
+
+.catalog-min {
+  width: 143px;
+  height: 48px;
+  background: #F2F2F2;
+  border: none;
+  border-radius: 0px 4px 4px 0px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 0;
 
 }
 
@@ -632,6 +665,7 @@ img {
   padding: 0;
   display: flex;
   gap: 8px;
+  flex-wrap: wrap;
 
 }
 
@@ -647,9 +681,15 @@ img {
   display: block;
   padding: 12px 24px;
 
+
 }
 
 .pagination-current {
   background-color: #F2F2F2;
+  color: #000000;
+}
+
+.next-page {
+  background-color: transparent;
   color: #000000;
 }
