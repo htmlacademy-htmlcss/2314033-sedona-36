@@ -631,7 +631,7 @@ img {
   list-style: none;
   padding: 0;
   display: flex;
-  gap: 20px;
+  gap: 8px;
 
 }
 
@@ -644,6 +644,8 @@ img {
   font-size: 20px;
   line-height: 36px;
   color: #FFFFFF;
+  display: block;
+  padding: 12px 24px;
 
 }
 
