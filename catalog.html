@@ -57,10 +57,12 @@
     </header>
 
     <main class="main-page">
+      <h1 class="visually-hidden">Главный поиск с фильтрами гостиниц в седоне.</h1>
+      <!-- FILTER SECTION -->
       <section class="inner-catalog">
-        <h1 class="visually-hidden">Список поиска гостиниц</h1>
+        <h2 class="visually-hidden">Список поиска гостиниц</h2>
         <section class="inner-header">
-          <h2 class="inner-title">Гостиницы Седоны</h2>
+          <h3 class="inner-title">Гостиницы Седоны</h3>
           <ol class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">
@@ -125,8 +127,8 @@
 
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость,&#8381;</legend>
-            <input type="text" name="max-sum">
-            <input type="text" name="min-sum">
+            <input class="catalog-sum" type="text" name="max-sum">
+            <input class="catalog-sum" type="text" name="min-sum">
             <input type="range" name="max-volume">
             <input type="range" name="max-volume">
           </fieldset>
@@ -139,8 +141,9 @@
       </section>
       <!-- SEARCH SECTION -->
       <section class="inner-search">
+        <h2 class="visually-hidden">Глобальные результаты поиска гостиниц.</h2>
         <section class="search">
-          <h2 class="visually-hidden">Группировки результатов гостиниц.</h2>
+          <h3 class="visually-hidden">Группировки результатов гостиниц.</h3>
           <p class="found-hotel">НАЙДЕНО ГОСТИНИЦ:<span class="found-hotel">38</span></p>
 
           <select class="select-control" aria-label="Сортировка">
@@ -164,8 +167,8 @@
         <!-- PRODUCTS -->
         <section class="product-container">
           <h2 class="visually-hidden">Результаты поиска гостиниц.</h2>
-          <ul class="product-card">
-            <li class="product-list">
+          <ul class="product-list">
+            <li class="product-item">
               <div class="card-wrapper">
                 <a class="product-card-link" href="#">
                   <img src="./images/catalog/hotel-1.jpg" alt="Вид на звездное небо из пещеры." width="300"
@@ -182,7 +185,7 @@
                 <p class="hotel-raiting">Рейтинг:8,5</p>
               </div>
             </li>
-            <li class="product-list">
+            <li class="product-item">
               <div class="card-wrapper">
                 <a class="product-card-link" href="#">
                   <img src="./images/catalog/hotel-2.jpg"
@@ -200,7 +203,7 @@
                 <span class="hotel-raiting">Рейтинг:9,2</span>
               </div>
             </li>
-            <li class="product-list">
+            <li class="product-item">
               <div class="card-wrapper">
                 <a class="product-card-link" href="#">
                   <img src="./images/catalog/hotel-3.jpg" alt="Вид на гору на фоне ясного голубого неба" width="300"
@@ -217,7 +220,7 @@
                 <p class="hotel-raiting">Рейтинг:6,9</p>
               </div>
             </li>
-            <li class="product-list">
+            <li class="product-item">
               <div class="card-wrapper">
                 <a class="product-card-link" href="#">
                   <img src="./images/catalog/hotel-4.jpg"
@@ -275,7 +278,7 @@
         </form>
       </section>
     </main>
-    <!-- FOOTER -->
+
     <footer class="page-footer">
       <section class="social">
         <h2 class="visually-hidden">Список социальных сетей</h2>
