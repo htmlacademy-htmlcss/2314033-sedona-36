@@ -632,6 +632,7 @@ img {
   padding: 0;
   display: flex;
   gap: 8px;
+  flex-wrap: wrap;
 
 }
 
@@ -645,7 +646,7 @@ img {
   line-height: 36px;
   color: #FFFFFF;
   display: block;
-  padding: 11.42px 24.5px;
+  padding: 12px 24px;
 
 
 }
