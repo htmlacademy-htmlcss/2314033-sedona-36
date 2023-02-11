@@ -2,10 +2,10 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./style/style.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
   <title>HTML Academy: Седона</title>
   <base href="https://htmlacademy-htmlcss.github.io/2314033-sedona-36/5/">
 </head>
@@ -16,7 +16,7 @@
       <nav class="navigation">
         <div class="main-navigation">
           <a class="navigation-logo" href="index.html">
-            <img src="./images/header/logo.svg" alt="Logo of HTML Academy" width="140" height="70" />
+            <img class="logo-picture" src="./images/header/logo.svg" alt="Logo of HTML Academy" width="140" height="70">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -58,15 +58,17 @@
     </header>
 
     <main class="main-page">
+      <h1 class="visually-hidden">Главный поиск с фильтрами гостиниц в седоне.</h1>
+      <!-- FILTER SECTION -->
       <section class="inner-catalog">
-        <h1 class="visually-hidden">Список поиска гостиниц</h1>
+        <h2 class="visually-hidden">Список поиска гостиниц</h2>
         <section class="inner-header">
-          <h2 class="inner-title">Гостиницы Седоны</h2>
+          <h3 class="inner-title">Гостиницы Седоны</h3>
           <ol class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">
                 <span class="visually-hidden">На главную.</span>
-                <img src="..." alt="Иконка домой с переходом на главную страницу." />
+                <img src="..." alt="Иконка домой с переходом на главную страницу.">
               </a>
             </li>
             <li class="breadcrumbs-item">
@@ -81,19 +83,19 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="swimmingpool" checked />
+                  <input class="control-input" type="checkbox" name="swimmingpool" checked>
                   Бассейн
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="parking" checked />
+                  <input class="control-input" type="checkbox" name="parking" checked>
                   Парковка
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="wifi" />
+                  <input class="control-input" type="checkbox" name="wifi">
                   Wi-Fi
                 </label>
               </li>
@@ -105,19 +107,19 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="product-group" value="hotel" checked />
+                  <input class="control-input" type="radio" name="product-group" value="hotel" checked>
                   Гостиница
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="product-group" value="motel" />
+                  <input class="control-input" type="radio" name="product-group" value="motel">
                   Парковка
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="product-group" value="apartaments" />
+                  <input class="control-input" type="radio" name="product-group" value="apartaments">
                   Апартаменты
                 </label>
               </li>
@@ -126,8 +128,8 @@
 
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость,&#8381;</legend>
-            <input type="text" name="max-sum">
-            <input type="text" name="min-sum">
+            <input class="catalog-sum" type="text" name="max-sum">
+            <input class="catalog-sum" type="text" name="min-sum">
             <input type="range" name="max-volume">
             <input type="range" name="max-volume">
           </fieldset>
@@ -138,10 +140,11 @@
           </div>
         </form>
       </section>
+      <!-- SEARCH SECTION -->
       <section class="inner-search">
+        <h2 class="visually-hidden">Глобальные результаты поиска гостиниц.</h2>
         <section class="search">
-          <h2 class="visually-hidden">Группировки результатов гостиниц.</h2>
-
+          <h3 class="visually-hidden">Группировки результатов гостиниц.</h3>
           <p class="found-hotel">НАЙДЕНО ГОСТИНИЦ:<span class="found-hotel">38</span></p>
 
           <select class="select-control" aria-label="Сортировка">
@@ -162,15 +165,15 @@
             </li>
           </ul>
         </section>
-
+        <!-- PRODUCTS -->
         <section class="product-container">
-          <h2 class="visually-hidden">Результаты поиска гостиниц.</h2>
-          <ul class="product-card">
-            <li class="product-list">
+          <h3 class="visually-hidden">Результаты поиска гостиниц.</h3>
+          <ul class="product-list">
+            <li class="product-item">
               <div class="card-wrapper">
                 <a class="product-card-link" href="#">
                   <img src="./images/catalog/hotel-1.jpg" alt="Вид на звездное небо из пещеры." width="300"
-                    height="212" />
+                    height="212">
                   <h3 class="product-title">Amara Resort & Spa</h3>
                 </a>
                 <span class="product-hotel">Гостиница</span>
@@ -183,12 +186,12 @@
                 <p class="hotel-raiting">Рейтинг:8,5</p>
               </div>
             </li>
-            <li class="product-list">
+            <li class="product-item">
               <div class="card-wrapper">
                 <a class="product-card-link" href="#">
                   <img src="./images/catalog/hotel-2.jpg"
                     alt="Вид на гору на фоне туч, через которые пробивается луч солнца и радуги." width="300"
-                    height="212" />
+                    height="212">
                   <h3 class="product-title">Villas at Poco Diablo</h3>
                 </a>
                 <span class="product-hotel">Гостиница</span>
@@ -201,11 +204,11 @@
                 <span class="hotel-raiting">Рейтинг:9,2</span>
               </div>
             </li>
-            <li class="product-list">
+            <li class="product-item">
               <div class="card-wrapper">
                 <a class="product-card-link" href="#">
                   <img src="./images/catalog/hotel-3.jpg" alt="Вид на гору на фоне ясного голубого неба" width="300"
-                    height="212" />
+                    height="212">
                   <h3 class="product-title">Desert Quail Inn</h3>
                 </a>
                 <span class="product-hotel">Гостиница</span>
@@ -218,12 +221,12 @@
                 <p class="hotel-raiting">Рейтинг:6,9</p>
               </div>
             </li>
-            <li class="product-list">
+            <li class="product-item">
               <div class="card-wrapper">
                 <a class="product-card-link" href="#">
                   <img src="./images/catalog/hotel-4.jpg"
                     alt="Вид на гору на фоне звезд, позади которой закат и всё в оранжевых тонах" width="300"
-                    height="200" />
+                    height="200">
                   <h3 class="product-title">GreenTree Inn</h3>
                 </a>
                 <span class="product-hotel">Гостиница</span>
@@ -237,9 +240,11 @@
               </div>
             </li>
           </ul>
-
+          <!-- PAGINATION -->
         </section>
+
         <section class="pagination-block">
+          <h3 class="visually-hidden">Пагинация страницы поиска.</h3>
           <ul class="pagination">
             <li class="pagination-list">
               <a class="pagination-link pagination-current" href="#">1</a>
@@ -263,53 +268,66 @@
           </ul>
         </section>
       </section>
-
+      <!-- SUBSCRIBE -->
       <section class="subscribe catalog">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form action=" https://echo.htmlacademy.ru/" method="post">
+        <h2 class="greeting-title">Подпишитесь на рассылку</h2>
+        <p class="greeting-about">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="form-wrapper" action=" https://echo.htmlacademy.ru/" method="post">
           <label>
             <span class="visually-hidden">Ваш e-mail.</span>
-            <input class="subscribe-field" type="email" name="email-field" placeholder="Ваш email" required />
+            <input class="subscribe-field" type="email" name="email-field" placeholder="Ваш email" required>
           </label>
           <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
+
     <footer class="page-footer">
-      <div class="footer-container">
-        <section class="social">
-          <h2 class="visually-hidden">Список социальных сетей</h2>
-          <ul class="social-list">
-            <li class="social-item">
-              <!-- картинка инлайновая тегом svg а не img -->
-              <a class="social-link" href="https://vk.com/htmlacademy">VK
-                <span class="visually-hidden">Ссылка-логотип социальной сети ВКонтакте.</span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="https://t.me/htmlacademy">Telegram
-                <span class="visually-hidden">Ссылка-логотип мессенджера Телеграм.</span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">Youtube
-                <span class="visually-hidden">Ссылка-логотип мессенджера Телеграм.</span>
-              </a>
-            </li>
-          </ul>
-        </section>
-        <section class="footer-phone">
-          <h2 class="visually-hidden">Контактный телефон</h2>
-          <a class="footer-number" href="tel:+78128121212">+7 812 812-12-12</a>
-        </section>
-        <section class="footer-logo">
-          <h2 class="visually-hidden">Ссылка логотоип HTML Academy</h2>
-          <a href="https://htmlacademy.ru">
-            <img class="footer-logo" src="./images/footer/academy-logo.svg"
-              alt="Логотип сайта академии HTML который ведет на сайт компании" width="115" height="33" /></a>
-        </section>
-      </div>
+      <section class="social">
+        <h2 class="visually-hidden">Список социальных сетей</h2>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-link" href="https://vk.com/htmlacademy">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="15" fill="none">
+                <path fill="#83B3D3" fill-rule="evenodd"
+                  d="M23.45 1.804c.166-.546 0-.948-.795-.948H20.03c-.668 0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167 0-.418-.19-.418-.738V1.804c0-.656-.184-.948-.74-.948H9.151c-.417 0-.668.304-.668.593 0 .621.946.765 1.043 2.513V7.76c0 .833-.153.984-.487.984-.89 0-3.055-3.21-4.34-6.885C4.45 1.144 4.198.856 3.527.856H.9c-.75 0-.9.347-.9.73 0 .682.89 4.07 4.145 8.551 2.17 3.06 5.225 4.72 8.008 4.72 1.669 0 1.875-.369 1.875-1.004V11.54c0-.737.158-.884.687-.884.39 0 1.057.192 2.615 1.667 1.78 1.75 2.073 2.533 3.075 2.533h2.625c.75 0 1.126-.368.91-1.096-.238-.724-1.088-1.775-2.215-3.022-.612-.71-1.53-1.475-1.809-1.858-.389-.49-.278-.71 0-1.147 0 0 3.2-4.426 3.533-5.929h.001Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="visually-hidden">Ссылка-логотип социальной сети ВКонтакте.</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="https://t.me/htmlacademy">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" fill="none">
+                <path fill="#83B3D3"
+                  d="M17.285.956 1.341 7.104C.253 7.541.259 8.148 1.14 8.42l4.094 1.277 9.471-5.976c.448-.272.857-.126.52.173l-7.673 6.925h-.002l.002.001-.282 4.22c.413 0 .596-.19.828-.414l1.988-1.934 4.136 3.055c.763.42 1.31.205 1.5-.706l2.715-12.795c.278-1.114-.425-1.618-1.153-1.29Z" />
+              </svg>
+              <span class="visually-hidden">Ссылка-логотип мессенджера Телеграм.</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" fill="none">
+                <path fill="#83B3D3"
+                  d="M19.1.36H3.68C1.81.36.5 1.95.5 3.76v10.09c0 1.91 1.31 3.5 3.17 3.5h15.66c1.64 0 3.17-1.59 3.17-3.4V3.76c-.22-1.8-1.53-3.4-3.4-3.4ZM8.17 12.89V4.82l7.34 4.04-7.34 4.03Z" />
+              </svg>
+              <span class="visually-hidden">Ссылка-логотип мессенджера Телеграм.</span>
+            </a>
+          </li>
+
+        </ul>
+      </section>
+      <section class="footer-phone">
+        <h2 class="visually-hidden">Контактный телефон</h2>
+        <a class="footer-number" href="tel:+78128121212">+7 812 812-12-12</a>
+      </section>
+      <section class="footer-logo">
+        <h2 class="visually-hidden">Ссылка логотоип HTML Academy</h2>
+        <a href="https://htmlacademy.ru">
+          <img class="footer-logo" src="./images/footer/academy-logo.svg"
+            alt="Логотип сайта академии HTML который ведет на сайт компании" width="115" height="33"></a>
+      </section>
+
     </footer>
   </div>
 </body>
