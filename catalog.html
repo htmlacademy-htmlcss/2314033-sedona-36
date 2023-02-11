@@ -2,10 +2,10 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./style/style.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
   <title>HTML Academy: Седона</title>
 </head>
 
@@ -15,7 +15,7 @@
       <nav class="navigation">
         <div class="main-navigation">
           <a class="navigation-logo" href="index.html">
-            <img class="logo-picture" src="./images/header/logo.svg" alt="Logo of HTML Academy" width="140" height="70" />
+            <img class="logo-picture" src="./images/header/logo.svg" alt="Logo of HTML Academy" width="140" height="70">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -67,7 +67,7 @@
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">
                 <span class="visually-hidden">На главную.</span>
-                <img src="..." alt="Иконка домой с переходом на главную страницу." />
+                <img src="..." alt="Иконка домой с переходом на главную страницу.">
               </a>
             </li>
             <li class="breadcrumbs-item">
@@ -82,19 +82,19 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="swimmingpool" checked />
+                  <input class="control-input" type="checkbox" name="swimmingpool" checked>
                   Бассейн
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="parking" checked />
+                  <input class="control-input" type="checkbox" name="parking" checked>
                   Парковка
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="wifi" />
+                  <input class="control-input" type="checkbox" name="wifi">
                   Wi-Fi
                 </label>
               </li>
@@ -106,19 +106,19 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="product-group" value="hotel" checked />
+                  <input class="control-input" type="radio" name="product-group" value="hotel" checked>
                   Гостиница
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="product-group" value="motel" />
+                  <input class="control-input" type="radio" name="product-group" value="motel">
                   Парковка
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="product-group" value="apartaments" />
+                  <input class="control-input" type="radio" name="product-group" value="apartaments">
                   Апартаменты
                 </label>
               </li>
@@ -166,13 +166,13 @@
         </section>
         <!-- PRODUCTS -->
         <section class="product-container">
-          <h2 class="visually-hidden">Результаты поиска гостиниц.</h2>
+          <h3 class="visually-hidden">Результаты поиска гостиниц.</h3>
           <ul class="product-list">
             <li class="product-item">
               <div class="card-wrapper">
                 <a class="product-card-link" href="#">
                   <img src="./images/catalog/hotel-1.jpg" alt="Вид на звездное небо из пещеры." width="300"
-                    height="212" />
+                    height="212">
                   <h3 class="product-title">Amara Resort & Spa</h3>
                 </a>
                 <span class="product-hotel">Гостиница</span>
@@ -190,7 +190,7 @@
                 <a class="product-card-link" href="#">
                   <img src="./images/catalog/hotel-2.jpg"
                     alt="Вид на гору на фоне туч, через которые пробивается луч солнца и радуги." width="300"
-                    height="212" />
+                    height="212">
                   <h3 class="product-title">Villas at Poco Diablo</h3>
                 </a>
                 <span class="product-hotel">Гостиница</span>
@@ -207,7 +207,7 @@
               <div class="card-wrapper">
                 <a class="product-card-link" href="#">
                   <img src="./images/catalog/hotel-3.jpg" alt="Вид на гору на фоне ясного голубого неба" width="300"
-                    height="212" />
+                    height="212">
                   <h3 class="product-title">Desert Quail Inn</h3>
                 </a>
                 <span class="product-hotel">Гостиница</span>
@@ -225,7 +225,7 @@
                 <a class="product-card-link" href="#">
                   <img src="./images/catalog/hotel-4.jpg"
                     alt="Вид на гору на фоне звезд, позади которой закат и всё в оранжевых тонах" width="300"
-                    height="200" />
+                    height="200">
                   <h3 class="product-title">GreenTree Inn</h3>
                 </a>
                 <span class="product-hotel">Гостиница</span>
@@ -239,9 +239,11 @@
               </div>
             </li>
           </ul>
-        <!-- PAGINATION -->
+          <!-- PAGINATION -->
         </section>
+
         <section class="pagination-block">
+          <h3 class="visually-hidden">Пагинация страницы поиска.</h3>
           <ul class="pagination">
             <li class="pagination-list">
               <a class="pagination-link pagination-current" href="#">1</a>
@@ -272,7 +274,7 @@
         <form class="form-wrapper" action=" https://echo.htmlacademy.ru/" method="post">
           <label>
             <span class="visually-hidden">Ваш e-mail.</span>
-            <input class="subscribe-field" type="email" name="email-field" placeholder="Ваш email" required />
+            <input class="subscribe-field" type="email" name="email-field" placeholder="Ваш email" required>
           </label>
           <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
@@ -322,7 +324,7 @@
         <h2 class="visually-hidden">Ссылка логотоип HTML Academy</h2>
         <a href="https://htmlacademy.ru">
           <img class="footer-logo" src="./images/footer/academy-logo.svg"
-            alt="Логотип сайта академии HTML который ведет на сайт компании" width="115" height="33" /></a>
+            alt="Логотип сайта академии HTML который ведет на сайт компании" width="115" height="33"></a>
       </section>
 
     </footer>
