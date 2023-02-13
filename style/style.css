@@ -66,6 +66,7 @@ img {
 
 .navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 1060px;
   margin: 0 auto;
@@ -87,6 +88,7 @@ img {
   padding: 0;
   width: 450px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -252,6 +254,7 @@ img {
   margin: 0;
   background: rgba(131, 179, 211, 0.12);
   display: flex;
+  flex-wrap: wrap;
 }
 
 .service-item {
@@ -345,6 +348,7 @@ img {
   min-height: 120px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   padding: 40px 70px 30px;
   justify-content: space-between;
 
