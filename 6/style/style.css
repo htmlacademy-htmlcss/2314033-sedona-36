@@ -400,6 +400,7 @@ img {
   color: #FFFFFF;
   min-height: 412px;
   padding: 35px 70px 70px 70px;
+  margin-bottom: 50px;
 }
 
 .inner-header {
@@ -419,6 +420,7 @@ img {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 /* .breadcrumbs-items{
@@ -430,23 +432,31 @@ img {
   font-size: 16px;
   line-height: 21px;
   display: block;
+  margin-right: 28px;
 }
 
 .catalog-filter{
   display: flex;
   justify-content: space-between;
   align-items: end;
+  flex-wrap: wrap;
 }
 
 .catalog-filter-group{
   border: none;
   padding: 0;
   margin: 0;
+  width: 170px;
+}
+
+.price {
+  width: 300px;
 }
 
 .catalog-buttons{
   display: flex;
   flex-direction: column;
+  width: 200px;
 }
 
 .catalog-filter-title {
@@ -459,6 +469,7 @@ img {
 .catalog-filter-list{
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .catalog-filter-item {
@@ -544,6 +555,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .found-hotel {
@@ -552,6 +564,9 @@ img {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  max-width: 350px;
+  word-break: break-word;
 }
 
 .select-control{
@@ -571,10 +586,18 @@ img {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 160px;
+  min-height: 48px;
 }
 
 .display-button{
   display: block;
+}
+
+.product-container{
+  margin-bottom: 80px;
 }
 
 .product-list {
@@ -671,9 +694,14 @@ img {
   background-color: #F2F2F2;
 }
 
+.pagination-block {
+  margin-bottom: 60px;
+}
+
 .pagination {
   list-style: none;
   padding: 0;
+  margin: 0;
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
