@@ -446,11 +446,17 @@ img {
   border: none;
   padding: 0;
   margin: 0;
+  width: 170px;
+}
+
+.price {
+  width: 300px;
 }
 
 .catalog-buttons{
   display: flex;
   flex-direction: column;
+  width: 200px;
 }
 
 .catalog-filter-title {
@@ -463,6 +469,7 @@ img {
 .catalog-filter-list{
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .catalog-filter-item {
