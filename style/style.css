@@ -735,8 +735,9 @@ img {
   line-height: 36px;
   color: #FFFFFF;
   display: block;
-  padding: 12px 24px;
+  padding: 12px 10px;
   min-width: 60px;
+  text-align: center;
 
 
 }
