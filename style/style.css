@@ -526,6 +526,7 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  width: 191px;
 }
 
 .catalog-reset {
@@ -542,6 +543,7 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  width: 191px;
 }
 
 /* SEARCH RESULTS */
@@ -653,12 +655,14 @@ img {
   text-transform: uppercase;
   background: #756157;
   border-radius: 4px;
-  padding: 8px 50px;
+  padding: 8px 26px;
   color: #FFFFFF;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   display: block;
+  width: 140px;
+  min-height: 36px;
 }
 
 .product-button {
@@ -670,11 +674,13 @@ img {
   text-transform: uppercase;
   background: #82B3D3;
   border-radius: 4px;
-  padding: 8px 50px;
+  padding: 8px 18px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+  width: 140px;
+  min-height: 36px;
 }
 
 .current {
@@ -682,7 +688,7 @@ img {
 }
 
 .hotel-raiting {
-  width: fit-content;
+  margin: 0;
   padding: 9px 22px 8px 23px;
   border-radius: 4px;
   font-weight: 400;
@@ -692,6 +698,9 @@ img {
   text-transform: uppercase;
   color: #333333;
   background-color: #F2F2F2;
+  width: 140px;
+  min-height: 36px;
+
 }
 
 .pagination-block {
