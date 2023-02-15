@@ -65,28 +65,38 @@ img {
 /* HEADER */
 
 .navigation {
-  display: flex;
-  justify-content: space-between;
   width: 1060px;
   margin: 0 auto;
   min-height: 64px;
+  position: relative;
 }
 
-.main-navigation {
-  display: flex;
-  align-items: center;
+.header-logo{
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .logo-picture{
   display: block;
 }
 
+.navigation-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 892px;
+  min-height: 64px;
+  margin-left: 168px;
+}
+
 .navigation-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 450px;
+  width: 400px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -107,7 +117,7 @@ img {
 }
 
 .navigation-link-user{
-  padding: 22px 12px;
+  padding: 20px 12px;
   display: block;
 
 }
@@ -252,6 +262,7 @@ img {
   margin: 0;
   background: rgba(131, 179, 211, 0.12);
   display: flex;
+  flex-wrap: wrap;
 }
 
 .service-item {
@@ -345,6 +356,7 @@ img {
   min-height: 120px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   padding: 40px 70px 30px;
   justify-content: space-between;
 
@@ -396,6 +408,7 @@ img {
   color: #FFFFFF;
   min-height: 412px;
   padding: 35px 70px 70px 70px;
+  margin-bottom: 50px;
 }
 
 .inner-header {
@@ -415,27 +428,43 @@ img {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
-.breadcrumbs-items{
+/* .breadcrumbs-items{
 
-}
+} */
 
 .breadcrumbs-link {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   display: block;
+  margin-right: 28px;
 }
 
 .catalog-filter{
   display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-wrap: wrap;
 }
 
 .catalog-filter-group{
   border: none;
   padding: 0;
   margin: 0;
+  width: 170px;
+}
+
+.price {
+  width: 300px;
+}
+
+.catalog-buttons{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
 }
 
 .catalog-filter-title {
@@ -448,6 +477,7 @@ img {
 .catalog-filter-list{
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .catalog-filter-item {
@@ -456,13 +486,39 @@ img {
   line-height: 23px;
 }
 
-.catalog-sum{
+.catalog-max{
+  width: 143px;
+  height: 48px;
+  background: #F2F2F2;
+  border: none;
+  border-radius: 4px 0px 0px 4px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 0;
 
 }
 
-.catalog-buttons{
+.catalog-min {
+  width: 143px;
+  height: 48px;
+  background: #F2F2F2;
+  border: none;
+  border-radius: 0px 4px 4px 0px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 0;
 
 }
+
+/* .catalog-buttons{
+
+} */
 
 .catalog-apply {
   background: #82B3D3;
@@ -478,6 +534,7 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  width: 191px;
 }
 
 .catalog-reset {
@@ -494,6 +551,7 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  width: 191px;
 }
 
 /* SEARCH RESULTS */
@@ -507,6 +565,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .found-hotel {
@@ -515,6 +574,9 @@ img {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  max-width: 350px;
+  word-break: break-word;
 }
 
 .select-control{
@@ -534,10 +596,18 @@ img {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 160px;
+  min-height: 48px;
 }
 
 .display-button{
   display: block;
+}
+
+.product-container{
+  margin-bottom: 80px;
 }
 
 .product-list {
@@ -566,6 +636,12 @@ img {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+  display: block;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
 }
 
 .product-title {
@@ -587,11 +663,14 @@ img {
   text-transform: uppercase;
   background: #756157;
   border-radius: 4px;
-  padding: 8px 50px;
+  padding: 8px 26px;
   color: #FFFFFF;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  display: block;
+  width: 140px;
+  min-height: 36px;
 }
 
 .product-button {
@@ -603,11 +682,13 @@ img {
   text-transform: uppercase;
   background: #82B3D3;
   border-radius: 4px;
-  padding: 8px 50px;
+  padding: 8px 18px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+  width: 140px;
+  min-height: 36px;
 }
 
 .current {
@@ -615,7 +696,7 @@ img {
 }
 
 .hotel-raiting {
-  width: fit-content;
+  margin: 0;
   padding: 9px 22px 8px 23px;
   border-radius: 4px;
   font-weight: 400;
@@ -625,13 +706,22 @@ img {
   text-transform: uppercase;
   color: #333333;
   background-color: #F2F2F2;
+  width: 140px;
+  min-height: 36px;
+
+}
+
+.pagination-block {
+  margin-bottom: 60px;
 }
 
 .pagination {
   list-style: none;
   padding: 0;
+  margin: 0;
   display: flex;
-  gap: 20px;
+  gap: 8px;
+  flex-wrap: wrap;
 
 }
 
@@ -644,10 +734,20 @@ img {
   font-size: 20px;
   line-height: 36px;
   color: #FFFFFF;
+  display: block;
+  padding: 12px 10px;
+  min-width: 60px;
+  text-align: center;
+
 
 }
 
 .pagination-current {
   background-color: #F2F2F2;
+  color: #000000;
+}
+
+.next-page {
+  background-color: transparent;
   color: #000000;
 }
