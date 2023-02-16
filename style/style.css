@@ -642,6 +642,7 @@ img {
 .product-image {
   width: 100%;
   height: auto;
+  margin-bottom: 16px;
 }
 
 .product-title {
@@ -649,12 +650,13 @@ img {
   font-size: 24px;
   line-height: 28px;
   margin: 0;
+  margin-bottom: 16px;
 }
 
 .content-wrapper{
   display: grid;
   grid-template-columns: 140px 140px;
-  grid-template-rows: 21px 36px 37px;
+  grid-template-rows: auto 36px 37px;
   gap: 16px;
 }
 
@@ -757,5 +759,10 @@ img {
 
 .next-page {
   background-color: transparent;
+  color: #000000;
+}
+
+.subscribe {
+  background: none;
   color: #000000;
 }
