@@ -651,10 +651,18 @@ img {
   margin: 0;
 }
 
+.content-wrapper{
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: 21px 36px 37px;
+  gap: 16px;
+}
+
 .product-price {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  justify-self: end;
 
 }
 
