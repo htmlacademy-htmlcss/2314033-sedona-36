@@ -656,8 +656,8 @@ img {
 .content-wrapper{
   display: grid;
   grid-template-columns: 140px 140px;
-  grid-template-rows: auto 36px 37px;
-  gap: 16px;
+  grid-template-rows: auto auto auto;
+  gap: 20px 16px;
 }
 
 .product-price {
