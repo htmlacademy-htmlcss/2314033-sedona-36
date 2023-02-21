@@ -628,6 +628,7 @@ img {
   padding: 20px;
   display: grid;
   grid-template-columns: 140px 140px;
+  grid-template-rows: 1fr;
   gap: 16px 20px;
 }
 
