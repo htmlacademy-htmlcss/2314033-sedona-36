@@ -611,15 +611,16 @@ img {
 }
 
 .product-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  list-style-type: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
+
 }
 
 .product-item {
-  list-style: none;
   width: 340px;
   min-height: 438px;
   border: 1px solid #E6E6E6;
