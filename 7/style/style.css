@@ -628,6 +628,9 @@ img {
 
 .card-wrapper{
   padding: 20px;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  gap: 16px 20px;
 }
 
 .product-card-link {
@@ -637,6 +640,7 @@ img {
   line-height: 28px;
   color: #000000;
   display: block;
+  grid-column: 1 / -1;
 }
 
 .product-image {
@@ -651,13 +655,6 @@ img {
   line-height: 28px;
   margin: 0;
   margin-bottom: 16px;
-}
-
-.content-wrapper{
-  display: grid;
-  grid-template-columns: 140px 140px;
-  grid-template-rows: auto auto auto;
-  gap: 20px 16px;
 }
 
 .product-price {
