@@ -625,9 +625,6 @@ img {
   min-height: 438px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
-}
-
-.card-wrapper{
   padding: 20px;
   display: grid;
   grid-template-columns: 140px 140px;
@@ -655,7 +652,6 @@ img {
   font-size: 24px;
   line-height: 28px;
   margin: 0;
-  margin-bottom: 16px;
 }
 
 .product-price {
