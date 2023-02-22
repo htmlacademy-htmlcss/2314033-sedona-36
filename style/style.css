@@ -149,9 +149,9 @@ img {
   background-color: #688fa9;
   background-position: bottom, center;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: auto, cover;
   min-height: 485px;
-  padding: 51px 371px 82px;
+  padding: 51px 0 82px;
 }
 
 .hero-logo {
@@ -320,7 +320,7 @@ img {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-  padding-left: 20px;
+  padding: 5px 10px 5px 20px;
 }
 
 .subscribe-button {
@@ -332,13 +332,13 @@ img {
   text-transform: uppercase;
   background: #82B3D3;
   border-radius: 0px 4px 4px 0px;
-  padding: 8px 50px;
+  padding: 8px 10px;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   color: #FFFFFF;
-  max-width: 350px;
+  width: 232px;
 }
 
 .form-wrapper{
@@ -365,17 +365,27 @@ img {
 .social-list{
   display: flex;
   min-height: 40px;
-  width: 142px;
+  width: 180px;
   list-style-type: none;
   padding: 0;
   margin: 0;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
 .social-link{
   display: block;
+  padding: 10px;
+  width: 49px;
+  height: 40px;
+  text-align: center;
+}
+
+.social-item{
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-phone{
@@ -611,23 +621,25 @@ img {
 }
 
 .product-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  list-style-type: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
+
 }
 
 .product-item {
-  list-style: none;
   width: 340px;
   min-height: 438px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
-}
-
-.card-wrapper{
   padding: 20px;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: 1fr;
+  gap: 16px 20px;
 }
 
 .product-card-link {
@@ -637,11 +649,14 @@ img {
   line-height: 28px;
   color: #000000;
   display: block;
+  grid-column: 1 / -1;
 }
 
 .product-image {
   width: 100%;
   height: auto;
+  margin-bottom: 16px;
+  display: block;
 }
 
 .product-title {
@@ -655,6 +670,7 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  justify-self: end;
 
 }
 
@@ -749,5 +765,10 @@ img {
 
 .next-page {
   background-color: transparent;
+  color: #000000;
+}
+
+.catalog {
+  background: none;
   color: #000000;
 }
