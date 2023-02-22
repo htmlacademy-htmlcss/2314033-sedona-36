@@ -365,17 +365,27 @@ img {
 .social-list{
   display: flex;
   min-height: 40px;
-  width: 142px;
+  width: 180px;
   list-style-type: none;
   padding: 0;
   margin: 0;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
 .social-link{
   display: block;
+  padding: 10px;
+  width: 49px;
+  height: 40px;
+  text-align: center;
+}
+
+.social-item{
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-phone{
