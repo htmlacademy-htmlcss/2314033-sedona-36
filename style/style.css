@@ -116,6 +116,16 @@ img {
   display: block;
 }
 
+
+.navigation-link:hover{
+  color: #756157
+}
+
+.navigation-link:active{
+  color: rgba(117, 97, 87, 0.3);
+
+}
+
 .navigation-link-user{
   padding: 20px 12px;
   display: block;
@@ -135,8 +145,17 @@ img {
   border-radius: 4px;
   display: block;
   max-width: 300px;
-
 }
+
+.navigation-button:hover{
+  background-color: #615048;
+}
+
+.navigation-button:focus{
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 
 /* MAIN */
 
@@ -295,6 +314,20 @@ img {
   margin: 54px auto 0;
 }
 
+.interested-button:hover {
+  background-color: #615048;
+}
+
+.interested-button:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
+}
+
+.interested-button:disabled {
+  color: #FFFFFF;
+  background-color: #E5E5E5;
+}
+
 .subscribe {
   background-color: #82B3D3;
   background-image: url("../images/main/Subscribe.jpg");
@@ -339,6 +372,19 @@ img {
   line-height: 36px;
   color: #FFFFFF;
   width: 232px;
+}
+
+.subscribe-button:hover {
+  background-color: #68A2CA;
+}
+
+.subscribe-button:focus {
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.subscribe-button:disabled {
+  background-color: #E5E5E5;
 }
 
 .form-wrapper{
@@ -406,6 +452,7 @@ img {
   text-transform: uppercase;
   color: #000000;
 }
+
 
 /* CATALOG */
 
@@ -547,6 +594,20 @@ img {
   width: 191px;
 }
 
+.catalog-apply:hover{
+  background-color: #68A2CA
+
+}
+.catalog-apply:focus{
+  background-color: #68A2CA
+}
+
+.catalog-apply:active{
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
+
 .catalog-reset {
   background: rgba(0, 0, 0, 0);
   border-radius: 4px;
@@ -562,6 +623,21 @@ img {
   font-size: 16px;
   line-height: 20px;
   width: 191px;
+}
+
+.catalog-reset:hover{
+  color: rgba(255, 255, 255, 0.6);
+
+}
+
+.catalog-reset:focus{
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.catalog-reset:active{
+  color: rgba(255, 255, 255, 0.3);
+
 }
 
 /* SEARCH RESULTS */
@@ -689,6 +765,14 @@ img {
   min-height: 36px;
 }
 
+.product-link-details:hover{
+  background-color: #615048;
+}
+
+.product-link-details:focus{
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .product-button {
   font-family: inherit;
   user-select: none;
@@ -707,8 +791,20 @@ img {
   min-height: 36px;
 }
 
+.product-button:hover{
+  background-color: #68A2CA;
+}
+
+.product-button:focus{
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .current {
   background: #7DB54F;
+}
+
+.current:hover{
+  background-color: #6C9E42;
 }
 
 .hotel-raiting {
@@ -754,21 +850,57 @@ img {
   padding: 12px 10px;
   min-width: 60px;
   text-align: center;
-
-
 }
 
-.pagination-current {
+.pagination-link-current {
   background-color: #F2F2F2;
   color: #000000;
+  text-decoration: none;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  display: block;
+  padding: 12px 10px;
+  min-width: 60px;
+  text-align: center;
 }
 
-.next-page {
+.pagination-link:hover{
+  background-color: #68A2CA
+}
+
+.pagination-link:focus{
+  color: rgba(255, 255, 255, 0.3);;
+}
+
+.pagination-link-next {
   background-color: transparent;
   color: #000000;
+  text-decoration: none;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  display: block;
+  padding: 12px 10px;
+  min-width: 60px;
+  text-align: center;
+}
+
+.pagination-link-next:hover {
+  background-color: #F2F2F2;
+}
+
+.pagination-link-next:focus {
+  color: #000000;
+  background-color:#E6E6E6;
 }
 
 .catalog {
   background: none;
   color: #000000;
 }
+
