@@ -434,6 +434,19 @@ img {
   padding: 0;
 }
 
+.footer-social {
+  fill: #83B3D3;
+}
+
+.footer-social:hover,
+.footer-social:focus{
+  fill: #68A2CA;
+}
+
+.footer-social:active{
+  fill: rgba(104, 162, 202, 0.3);
+}
+
 .footer-phone{
   max-width: 340px;
   min-height: 40px;
@@ -443,6 +456,7 @@ img {
   max-width: 150px;
   min-height: 33px;
 }
+
 .footer-number {
   text-decoration: none;
   font-weight: 400;
@@ -451,6 +465,31 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+}
+
+.footer-number:hover{
+  color: #756157;
+}
+
+.footer-number:focus{
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.link-logo{
+  display: block;
+}
+
+.footer-picture{
+  fill: #000000;
+}
+
+.footer-picture:hover,
+.footer-picture:focus{
+  fill: #756157;
+}
+
+.footer-picture:active{
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 
