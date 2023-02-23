@@ -100,6 +100,10 @@ img {
   align-items: center;
 }
 
+.navigation-item{
+  position: relative;
+}
+
 .navigation-user {
   text-decoration: none;
   justify-content: flex-end;
@@ -114,8 +118,17 @@ img {
   color: #000000;
   padding: 20px 16px;
   display: block;
+
 }
 
+.current-link::before{
+  position: absolute;
+  content: "";
+  left: 15px;
+  right: 15px;
+  bottom: -1px;
+  border-bottom: 2px solid #756257;
+}
 
 .navigation-link:hover{
   color: #756157
@@ -129,7 +142,23 @@ img {
 .navigation-link-user{
   padding: 20px 12px;
   display: block;
+  text-decoration: none;
+  position: relative;
 
+}
+
+.favourite-number{
+  position: absolute;
+  left: 20px;
+  top: 11px;
+  padding: 5px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+  background-color: #7DB54F;
+  border-radius: 10px;
+  max-width: 35px;
 }
 
 .navigation-button {
@@ -145,6 +174,7 @@ img {
   border-radius: 4px;
   display: block;
   max-width: 300px;
+  margin-left: 20px;
 }
 
 .navigation-button:hover{
@@ -525,11 +555,19 @@ img {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
-/* .breadcrumbs-items{
-
-} */
+.breadcrumbs-link-home {
+  background-image: url('../images/catalog/home.svg');
+  width: 13px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  background-position: center;
+  display: block;
+  margin-right: 10px;
+}
 
 .breadcrumbs-link {
   font-weight: 400;
@@ -593,7 +631,7 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  padding: 0;
+  padding: 20px;
 
 }
 
@@ -608,7 +646,7 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  padding: 0;
+  padding: 20px;
 
 }
 
