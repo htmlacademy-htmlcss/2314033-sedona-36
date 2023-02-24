@@ -140,7 +140,8 @@ img {
   left: 15px;
   right: 15px;
   bottom: -1px;
-  border-bottom: 2px solid #756257;
+  height: 2px;
+  background: #756257;
 }
 
 .navigation-link:hover,
@@ -659,6 +660,10 @@ img {
   align-items: center;
 }
 
+.breadcrumbs-item{
+  position: relative;
+}
+
 .breadcrumbs-link-home {
   background-image: url('../images/catalog/home.svg');
   width: 13px;
@@ -666,8 +671,27 @@ img {
   background-repeat: no-repeat;
   background-size: 12px 12px;
   background-position: center;
-  display: block;
-  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 28px;
+}
+
+.breadcrumbs-link::before{
+  content: '';
+  background-image: url('../images/breadcrumps/arrow-logo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 7px 10px;
+  position: absolute;
+  width: 8px;
+  height: 11px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  margin-left: -17px;
 }
 
 .breadcrumbs-link {
@@ -675,7 +699,6 @@ img {
   font-size: 16px;
   line-height: 21px;
   display: block;
-  margin-right: 28px;
 }
 
 .catalog-filter{
