@@ -210,7 +210,7 @@ img {
 }
 
 .hero {
-  background-image:url("../images/hero/vector-background.svg"), url("../images/hero/index-background.jpg");
+  background-image:url("../images/hero/background-vector.svg"), url("../images/hero/index-background.jpg");
   background-color: #688fa9;
   background-position: bottom, center;
   background-repeat: no-repeat;
