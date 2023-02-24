@@ -273,6 +273,14 @@ img {
   margin-bottom: 30px;
 }
 
+.food::before{
+  background-image: url('../images/main/food.svg');
+}
+
+.souvenire::before{
+  background-image: url('../images/main/gift.svg');
+}
+
 .advantage-picture-text{
   padding: 102px 85px;
   text-align: center;
