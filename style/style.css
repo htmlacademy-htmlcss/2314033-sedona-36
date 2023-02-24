@@ -160,7 +160,6 @@ img {
   display: block;
   text-decoration: none;
   position: relative;
-
 }
 
 .favourite-number{
@@ -259,8 +258,19 @@ img {
   line-height: 28px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 62px;
+  margin-bottom: 30px;
+}
 
+.service-title::before{
+  content:'';
+  background-image: url('../images/main/house.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  width: 75px;
+  height: 72px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .advantage-picture-text{
