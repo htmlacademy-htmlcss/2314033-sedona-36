@@ -157,7 +157,9 @@ img {
 
 .navigation-link-user{
   padding: 20px 12px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   position: relative;
 }
@@ -266,6 +268,7 @@ img {
   background-image: url('../images/main/house.svg');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
   display: block;
   width: 75px;
   height: 72px;
@@ -279,6 +282,8 @@ img {
 
 .souvenire::before{
   background-image: url('../images/main/gift.svg');
+  height: 76px;
+  margin-top: -4px;
 }
 
 .advantage-picture-text{
@@ -485,11 +490,12 @@ img {
 }
 
 .social-link{
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
   width: 49px;
   height: 40px;
-  text-align: center;
 }
 
 .social-item{
@@ -748,6 +754,7 @@ img {
 }
 
 .catalog-reset:focus{
+  outline: none;
   color: rgba(255, 255, 255, 0.3);
 
 }
