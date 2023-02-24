@@ -157,7 +157,9 @@ img {
 
 .navigation-link-user{
   padding: 20px 12px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   position: relative;
 }
@@ -488,11 +490,12 @@ img {
 }
 
 .social-link{
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
   width: 49px;
   height: 40px;
-  text-align: center;
 }
 
 .social-item{
