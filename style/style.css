@@ -104,21 +104,18 @@ img {
   position: relative;
 }
 
-.navigation-icon{
+/* .navigation-icon{
   fill: #000000;
 }
 
 .navigation-icon:hover,
 .navigation-icon:focus{
   fill: #756157;
-  border: 2px solid #82B3D3;
-  border-radius: 5px;
-  background-color: #E6E6E6;
 }
 
 .navigation-icon:active{
   fill: rgba(117, 97, 87, 0.3);
-}
+} */
 
 .navigation-user {
   text-decoration: none;
@@ -148,22 +145,48 @@ img {
 
 .navigation-link:hover,
 .navigation-link:focus{
-  color: #756157
+  color: #756157;
+  background-color: #F2F2F2;
 }
 
 .navigation-link:active{
   color: rgba(117, 97, 87, 0.3);
-
 }
 
 .navigation-link-user{
-  padding: 20px 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   position: relative;
+  min-height: 64px;
+  width: 44px;
+  height: 64px;
+  padding: 22px 12px;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+.search-icon{
+  background-image: url('../images/header/search.svg');
+}
+
+.favourite-icon{
+  background-image: url('../images/header/heart.svg');
+}
+
+.navigation-link-user:hover,
+.navigation-link-user:focus{
+  background-color: #F2F2F2;
+
+}
+
+.navigation-link-user:active{
+
+}
+
+
 
 .favourite-number{
   position: absolute;
@@ -1057,11 +1080,12 @@ img {
   text-align: center;
 }
 
-.pagination-link:hover{
+.pagination-link:hover,
+.pagination-link:focus{
   background-color: #68A2CA
 }
 
-.pagination-link:focus{
+.pagination-link:active{
   color: rgba(255, 255, 255, 0.3);;
 }
 
@@ -1080,11 +1104,12 @@ img {
   text-align: center;
 }
 
-.pagination-link-next:hover {
+.pagination-link-next:hover,
+.pagination-link-next:focus {
   background-color: #F2F2F2;
 }
 
-.pagination-link-next:focus {
+.pagination-link-next:active {
   color: #000000;
   background-color:#E6E6E6;
 }
