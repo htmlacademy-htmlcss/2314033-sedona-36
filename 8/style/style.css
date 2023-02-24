@@ -1084,7 +1084,26 @@ img {
   background-color: #F2F2F2;
   width: 140px;
   min-height: 36px;
+}
 
+.product-raiting{
+  background-image: url('../images/catalog/star.svg');
+  background-repeat: space no-repeat;
+  background-size: 18px 17px;
+  background-position: center;
+  margin: 0;
+}
+
+.star-2{
+  width:42px;
+}
+
+.star-3{
+  width:66px;
+}
+
+.star-4{
+  width: 89px;
 }
 
 .pagination-block {
