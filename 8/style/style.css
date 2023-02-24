@@ -104,6 +104,22 @@ img {
   position: relative;
 }
 
+.navigation-icon{
+  fill: #000000;
+}
+
+.navigation-icon:hover,
+.navigation-icon:focus{
+  fill: #756157;
+  border: 2px solid #82B3D3;
+  border-radius: 5px;
+  background-color: #E6E6E6;
+}
+
+.navigation-icon:active{
+  fill: rgba(117, 97, 87, 0.3);
+}
+
 .navigation-user {
   text-decoration: none;
   justify-content: flex-end;
