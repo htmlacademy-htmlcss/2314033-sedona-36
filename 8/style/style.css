@@ -137,8 +137,8 @@ img {
 .current-link::before{
   position: absolute;
   content: "";
-  left: 15px;
-  right: 15px;
+  left: 16px;
+  right: 16px;
   bottom: -1px;
   height: 2px;
   background: #756257;
@@ -240,7 +240,7 @@ img {
   background-color: #688fa9;
   background-position: bottom, center;
   background-repeat: no-repeat;
-  background-size: auto, cover;
+  background-size: contain, cover;
   min-height: 485px;
   padding: 51px 0 82px;
 }
@@ -865,14 +865,20 @@ img {
 
 .select-control{
   width: 292px;
-  height: 49px;
+  min-height: 49px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  padding-left: 20px;
+  padding: 12px 20px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  appearance: none;
+  background-image: url('../images/catalog/arrow-bottom.svg');
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  padding-right: 40px;
+
 }
 
 .select-control:hover {
@@ -880,6 +886,7 @@ img {
 }
 
 .select-control:focus{
+  outline: none;
   border: 2px solid #3F5E72;
 
 }
