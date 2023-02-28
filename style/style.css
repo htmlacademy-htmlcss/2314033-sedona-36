@@ -485,6 +485,11 @@ img {
   padding: 5px 10px 5px 20px;
 }
 
+.subscribe-field:hover{
+  outline: 2px solid #68A2CA;
+  border-radius: 4px;
+}
+
 .subscribe-button {
   font-family: inherit;
   user-select: none;
@@ -771,12 +776,27 @@ img {
   font-size: 18px;
   line-height: 24px;
   padding: 20px;
-
 }
 
-/* .catalog-buttons{
+.catalog-max:hover,
+.catalog-min:hover{
+  background-color: #E6E6E6;
+}
 
-} */
+.catalog-max:focus{
+  outline: none;
+  background: #E6E6E6;
+  outline: 3px solid #83B3D3;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.catalog-min:focus{
+  outline: none;
+  background: #E6E6E6;
+  outline: 3px solid #83B3D3;
+  border-radius: 0px 4px 4px 0px;
+}
+
 
 .catalog-apply {
   background: #82B3D3;
@@ -829,6 +849,12 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.catalog-reset:focus{
+  outline: none;
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
 .catalog-reset:active{
   outline: none;
   color: rgba(255, 255, 255, 0.3);
@@ -878,6 +904,7 @@ img {
   background-repeat: no-repeat;
   background-position: right 20px center;
   padding-right: 40px;
+  margin-left: auto;
 
 }
 
@@ -905,6 +932,7 @@ img {
   gap: 8px;
   max-width: 160px;
   min-height: 48px;
+  margin-left: 70px;
 }
 
 .display-button{
