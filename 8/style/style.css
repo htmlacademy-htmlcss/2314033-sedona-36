@@ -640,7 +640,7 @@ img {
   background-repeat: no-repeat;
   color: #FFFFFF;
   min-height: 412px;
-  padding: 35px 70px 70px 70px;
+  padding: 35px 70px 0;
   margin-bottom: 50px;
 }
 
@@ -654,6 +654,7 @@ img {
   font-size: 60px;
   line-height: 78px;
   margin: 0;
+  margin-bottom: 8px;
 }
 
 .breadcrumbs{
@@ -708,7 +709,6 @@ img {
 
 .catalog-filter{
   display: flex;
-  justify-content: space-between;
   align-items: end;
   flex-wrap: wrap;
 }
@@ -718,10 +718,12 @@ img {
   padding: 0;
   margin: 0;
   width: 170px;
+  margin-right: 70px;
 }
 
 .price {
   width: 300px;
+  align-self: flex-start;
 }
 
 .catalog-buttons{
@@ -735,6 +737,7 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  margin-bottom: 32px;
 }
 
 .catalog-filter-list{
@@ -747,6 +750,7 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+  margin-bottom: 16px;
 }
 
 .catalog-max{
@@ -905,7 +909,6 @@ img {
   background-position: right 20px center;
   padding-right: 40px;
   margin-left: auto;
-
 }
 
 .select-control:hover {
@@ -915,7 +918,6 @@ img {
 .select-control:focus{
   outline: none;
   border: 2px solid #3F5E72;
-
 }
 
 .select-control:disabled{
@@ -986,7 +988,6 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 340px);
   gap: 20px;
-
 }
 
 .product-item {
@@ -1152,7 +1153,6 @@ img {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
-
 }
 
 .pagination-link {
