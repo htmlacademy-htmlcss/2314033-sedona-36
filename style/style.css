@@ -905,7 +905,6 @@ img {
   background-position: right 20px center;
   padding-right: 40px;
   margin-left: auto;
-
 }
 
 .select-control:hover {
@@ -915,7 +914,6 @@ img {
 .select-control:focus{
   outline: none;
   border: 2px solid #3F5E72;
-
 }
 
 .select-control:disabled{
@@ -986,7 +984,6 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 340px);
   gap: 20px;
-
 }
 
 .product-item {
@@ -1152,7 +1149,6 @@ img {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
-
 }
 
 .pagination-link {
