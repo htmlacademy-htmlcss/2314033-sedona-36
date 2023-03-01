@@ -782,6 +782,14 @@ img {
   padding: 20px;
 }
 
+.catalog-min::-webkit-inner-spin-button,
+.catalog-min::-webkit-outer-spin-button,
+.catalog-max::-webkit-inner-spin-button,
+.catalog-max::-webkit-outler-spin-button{
+  appearance: none;
+  margin: 0;
+}
+
 .catalog-max:hover,
 .catalog-min:hover{
   background-color: #E6E6E6;
