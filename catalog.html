@@ -118,8 +118,29 @@
 
           <fieldset class="catalog-filter-group price">
             <legend class="catalog-filter-title">Стоимость,&#8381;</legend>
-            <input class="catalog-max" type="number" name="max-sum" placeholder="от">
-            <input class="catalog-min" type="number" name="min-sum" placeholder="до">
+            <!-- <input class="catalog-max" type="number" name="max-sum" placeholder="от">
+            <input class="catalog-min" type="number" name="min-sum" placeholder="до"> -->
+            <div class="range">
+              <div class="range-wrapper-inputs">
+                <label class="catalog-filter-label">
+                  <input class="catalog-max" type="number" name="max-sum" value="0">
+                </label>
+                <label class="catalog-filter-label">
+                  <input class="catalog-min" type="number" name="min-sum" value="9000">
+                </label>
+              </div>
+
+              <div class="range-scale">
+                <div class="range-bar">
+                  <button class="range-toggle toggle-min">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle toggle-max">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
+              </div>
+            </div>
           </fieldset>
 
           <div class="catalog-buttons">
