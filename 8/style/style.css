@@ -77,6 +77,20 @@ img {
   top: 0;
 }
 
+.catalog-logo:hover,
+.catalog-logo:focus{
+  opacity: 60%;
+}
+
+.catalog-logo:active{
+  opacity: 30%;
+}
+
+.catalo-logo:disabled{
+  opacity:10%
+}
+
+
 .logo-picture{
   display: block;
 }
@@ -146,12 +160,11 @@ img {
 
 .navigation-link:hover,
 .navigation-link:focus{
-  color: #756157;
   background-color: #F2F2F2;
 }
 
 .navigation-link:active{
-  color: rgba(117, 97, 87, 0.3);
+  opacity: 60%;
 }
 
 .navigation-link-user{
@@ -180,8 +193,12 @@ img {
 .navigation-link-user:hover,
 .navigation-link-user:focus{
   background-color: #F2F2F2;
-
 }
+
+.navigation-link-user:active{
+  opacity: 60%;
+}
+
 
 .favourite-number{
   position: absolute;
@@ -780,6 +797,14 @@ img {
   font-size: 18px;
   line-height: 24px;
   padding: 20px;
+}
+
+.catalog-min::-webkit-inner-spin-button,
+.catalog-min::-webkit-outer-spin-button,
+.catalog-max::-webkit-inner-spin-button,
+.catalog-max::-webkit-outler-spin-button{
+  appearance: none;
+  margin: 0;
 }
 
 .catalog-max:hover,
