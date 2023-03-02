@@ -737,6 +737,52 @@ img {
   margin-right: 70px;
 }
 
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+/* Mark */
+.control-mark {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.control:hover {
+  opacity: 60%;
+}
+
+/* .control:focus .control-mark {
+  border: 3px solid #83B3D3;
+} */
+
+
+.control:active{
+  opacity: 30%;
+}
+
+.control:disabled{
+  opacity: 10%;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after{
+  content: '';
+  background-image: url('../images/catalog/checkmark.svg');
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 12px;
+  height: 10px;
+}
+
 .price {
   width: 300px;
   align-self: flex-start;
