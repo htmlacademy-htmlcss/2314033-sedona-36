@@ -746,6 +746,7 @@ img {
   display: flex;
   flex-direction: column;
   width: 200px;
+  gap: 32px;
 }
 
 .catalog-filter-title {
@@ -825,6 +826,53 @@ img {
   border-radius: 0px 4px 4px 0px;
 }
 
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 287px;
+}
+
+.range-bar{
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-min{
+  left: 0;
+  top:-8px;
+}
+
+.toggle-max{
+  right: -8px;
+  top:-8px;
+}
+
+.range-toggle:hover,
+.range-toggle:focus {
+  background-color: #F2F2F2;
+}
+
+.range-toggle:active {
+  background-color:#E6E6E6;
+}
+
+.range-wrapper-inputs{
+  margin-bottom: 48px;
+  display: flex;
+  gap: 2px;
+}
 
 .catalog-apply {
   background: #82B3D3;
