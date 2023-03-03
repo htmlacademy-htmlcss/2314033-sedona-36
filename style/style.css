@@ -699,7 +699,20 @@ img {
   margin-right: 28px;
 }
 
-.breadcrumbs-link::before{
+.breadcrumbs-link-home:hover,
+.breadcrumbs-link-home:focus{
+  opacity: 60%;
+}
+
+.breadcrumbs-link-home:active{
+  opacity: 30%;
+}
+
+.breadcrumbs-link-home:disabled{
+  opacity: 10%;
+}
+
+.breadcrumbs-item:not(:last-child):after{
   content: '';
   background-image: url('../images/breadcrumps/arrow-logo.svg');
   background-repeat: no-repeat;
@@ -713,8 +726,9 @@ img {
   right: 0;
   bottom: 0;
   margin: auto;
-  margin-left: -17px;
+  margin-left: 23px;
 }
+
 
 .breadcrumbs-link {
   font-weight: 400;
