@@ -737,6 +737,10 @@ img {
   margin-right: 70px;
 }
 
+.catalog-filter-label{
+  position: relative;
+}
+
 .control {
   position: relative;
   display: block;
@@ -857,6 +861,14 @@ img {
   font-size: 18px;
   line-height: 24px;
   padding: 20px;
+}
+
+.from-to{
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  color: #000000;
+  opacity: 30%;
 }
 
 .catalog-min::-webkit-inner-spin-button,
