@@ -776,11 +776,6 @@ img {
   opacity: 60%;
 }
 
-/* .control:focus .control-mark {
-  border: 3px solid #83B3D3;
-} */
-
-
 .control:active{
   opacity: 30%;
 }
@@ -814,6 +809,10 @@ img {
   background-color: #3F5E72;
   border-radius: 50%;
   content: "";
+}
+
+.control-input:not(:disabled):focus + .control-mark {
+  outline: 3px solid #81b2d2;
 }
 
 .price {
@@ -860,7 +859,7 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  padding: 20px;
+  padding: 10px 30px 10px 20px;
 }
 
 .catalog-min {
@@ -874,7 +873,7 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  padding: 20px;
+  padding: 10px 30px 10px 20px;
 }
 
 .from-to{
