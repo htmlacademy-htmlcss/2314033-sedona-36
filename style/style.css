@@ -811,6 +811,10 @@ img {
   content: "";
 }
 
+.control-input:not(:disabled):focus + .control-mark {
+  outline: 3px solid #81b2d2;
+}
+
 .price {
   width: 300px;
   align-self: flex-start;
