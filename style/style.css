@@ -1475,10 +1475,10 @@ img {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-  background-image: url('../images/popup/calendar.svg');
+  background-image: url('../images/popup/date.svg');
   background-repeat: no-repeat;
   background-position: top 15px right 20px;
-  background-size: 16px 15px;
+  background-size: 20px 20px;
 }
 
 
@@ -1533,6 +1533,22 @@ img {
   background-color: #F2F2F2;
   cursor: pointer;
   padding: 0;
+}
+
+.less {
+  background-image: url('../images/popup/less.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px 0 0 4px;
+
+}
+
+.more{
+  background-image: url('../images/popup/more.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0 4px 4px 0;
+
 }
 
 .button-wrapper{
