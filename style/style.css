@@ -1393,9 +1393,9 @@ img {
   background-color:rgba(242, 242, 242, 0.8);
 }
 
-/* .modal-container-close{
+.modal-container-close{
   display: none;
-} */
+}
 
 .modal {
   position: relative;
@@ -1424,6 +1424,21 @@ img {
   right: 52px;
   top: 64px;
   padding: 0;
+}
+
+.modal-close-button:hover, .modal-close-button:focus {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:active{
+  background-color: #E6E6E6;
+  background-image: url('../images/popup/close-active.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-close-button:disabled{
+  opacity: 20%;
 }
 
 .modal-title{
@@ -1466,6 +1481,19 @@ img {
   border-radius: 4px;
 }
 
+.search-button:hover, .search-button:focus{
+  background-color: #68A2CA;
+}
+
+.search-button:active{
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search-button:disabled{
+  opacity: 20%;
+}
+
 .calendar{
   padding: 12px 40px 12px 20px;
   border: none;
@@ -1481,10 +1509,17 @@ img {
   background-size: 20px 20px;
 }
 
-
 .calendar::-webkit-input-placeholder  {
   color: #000000;
  }
+
+.calendar:hover, .calendar:focus{
+  background-color:#E6E6E6;
+}
+
+.calendar:disabled{
+  opacity: 20%;
+}
 
  .date-wrapper{
   display: grid;
@@ -1526,6 +1561,14 @@ img {
   margin: 0;
 }
 
+.people-number:hover, .people-number:focus{
+  background-color: #E6E6E6;
+}
+
+.people-number:disabled{
+  opacity: 20%;
+}
+
 .add-button{
   width: 40px;
   height: 48px;
@@ -1535,12 +1578,19 @@ img {
   padding: 0;
 }
 
+.add-button:hover, .add-button:focus{
+  background-color: #E6E6E6;
+}
+
+.add-button:active{
+  background-color: #d6d6d6;
+}
+
 .less {
   background-image: url('../images/popup/less.svg');
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 4px 0 0 4px;
-
 }
 
 .more{
@@ -1548,7 +1598,6 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 0 4px 4px 0;
-
 }
 
 .button-wrapper{
@@ -1624,8 +1673,6 @@ img {
   right:0;
   margin-left: auto;
   margin-right: auto;
-
-
 }
 
 .button-tooltip:hover + .tooltip-text,
