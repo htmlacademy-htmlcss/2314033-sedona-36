@@ -201,7 +201,7 @@
       </section>
     </footer>
 
-    <div class="modal-container">
+    <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
@@ -212,11 +212,13 @@
             <div class="date-wrapper">
               <label class="field-name" for="in-date">Дата Заезда: </label>
               <input class="calendar" type="text" id="in-date" name="date-in" placeholder="27 апреля 2020">
+              <p class="date-info attention">Мы не можем отправить вас в прошлое.</p>
             </div>
 
             <div class="date-wrapper">
               <label class="field-name" for="out-date">Дата Выезда:</label>
               <input class="calendar" type="text" id="out-date" name="date-out" placeholder="1 сентября 2023">
+              <p class="date-info">На эти даты есть свободные номера. Пока есть.</p>
             </div>
 
             <div class="number-wrapper">
