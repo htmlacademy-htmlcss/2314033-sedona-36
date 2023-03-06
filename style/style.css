@@ -1393,6 +1393,10 @@ img {
   background-color:rgba(242, 242, 242, 0.8);
 }
 
+/* .modal-container-close{
+  display: none;
+} */
+
 .modal {
   position: relative;
   margin: auto;
@@ -1475,18 +1479,34 @@ img {
   background-repeat: no-repeat;
   background-position: top 15px right 20px;
   background-size: 16px 15px;
-  flex-grow: 1;
 }
+
 
 .calendar::-webkit-input-placeholder  {
   color: #000000;
  }
 
  .date-wrapper{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 48px;
+  display: grid;
+  grid-template-columns: 119px 440px;
+  grid-template-rows: 48px 25px;
+  column-gap: 20px;
   align-items: center;
+  margin-bottom: 23px;
+ }
+
+ .date-info{
+  margin: 0;
+  padding-left: 20px;
+  grid-column: 2;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+ }
+
+ .attention{
+  color: #FF5757;
  }
 
  .people-number{
@@ -1512,6 +1532,7 @@ img {
   border: none;
   background-color: #F2F2F2;
   cursor: pointer;
+  padding: 0;
 }
 
 .button-wrapper{
@@ -1576,7 +1597,7 @@ img {
   display: none;
 }
 
-.tooltip-text:after{
+.tooltip-text::after{
   content: '';
   background-image: url('../images/popup/tooltip-arrow.svg');
   width: 19px;
@@ -1596,6 +1617,4 @@ img {
   display: block;
 }
 
-/* .modal-container{
-  display: none;
-} */
+
