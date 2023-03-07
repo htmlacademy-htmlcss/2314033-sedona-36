@@ -1,16 +1,16 @@
 @font-face {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2") format('woff2');
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2") format('woff2');
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -25,7 +25,7 @@ html {
 }
 
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #f2f2f2;
@@ -170,11 +170,11 @@ img {
 }
 
 .search-icon{
-  background-image: url('../images/header/search.svg');
+  background-image: url("../images/header/search.svg");
 }
 
 .favourite-icon {
-  background-image: url('../images/header/heart.svg');
+  background-image: url("../images/header/heart.svg");
 }
 
 .navigation-link-user:hover,
@@ -290,7 +290,7 @@ img {
 }
 
 .advantages-title::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 60px;
   height: 2px;
@@ -318,8 +318,8 @@ img {
 }
 
 .service-title::before {
-  content:'';
-  background-image: url('../images/main/house.svg');
+  content:"";
+  background-image: url("../images/main/house.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -331,11 +331,11 @@ img {
 }
 
 .food::before {
-  background-image: url('../images/main/food.svg');
+  background-image: url("../images/main/food.svg");
 }
 
 .souvenire::before{
-  background-image: url('../images/main/gift.svg');
+  background-image: url("../images/main/gift.svg");
   height: 76px;
   margin-top: -4px;
 }
@@ -475,7 +475,7 @@ img {
   background-color: #F2F2F2;
   border-radius: 4px 0px 0px 4px;
   border: none;
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -665,7 +665,7 @@ img {
 }
 
 .breadcrumbs-link-home {
-  background-image: url('../images/catalog/home.svg');
+  background-image: url("../images/catalog/home.svg");
   width: 15px;
   height: 15px;
   background-repeat: no-repeat;
@@ -691,8 +691,8 @@ img {
 }
 
 .breadcrumbs-item:not(:last-child):after {
-  content: '';
-  background-image: url('../images/breadcrumps/arrow-logo.svg');
+  content: "";
+  background-image: url("../images/breadcrumps/arrow-logo.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 7px 10px;
@@ -766,8 +766,8 @@ img {
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::after {
-  content: '';
-  background-image: url('../images/catalog/checkmark.svg');
+  content: "";
+  background-image: url("../images/catalog/checkmark.svg");
   background-size: contain;
   background-position: center;
   position: absolute;
@@ -838,7 +838,7 @@ img {
   background: #F2F2F2;
   border: none;
   border-radius: 4px 0px 0px 4px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -852,7 +852,7 @@ img {
   background: #F2F2F2;
   border: none;
   border-radius: 0px 4px 4px 0px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1044,7 +1044,7 @@ img {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   appearance: none;
-  background-image: url('../images/catalog/arrow-bottom.svg');
+  background-image: url("../images/catalog/arrow-bottom.svg");
   background-repeat: no-repeat;
   background-position: right 18px center;
   padding-right: 40px;
@@ -1094,11 +1094,11 @@ img {
 }
 
 .view-table {
-  background-image:url('../images/catalog/table.svg')
+  background-image:url("../images/catalog/table.svg")
 }
 
 .view-item {
-  background-image: url('../images/catalog/item.svg');
+  background-image: url("../images/catalog/item.svg");
 }
 
 .display-button:hover {
@@ -1114,7 +1114,7 @@ img {
 }
 
 .view-list {
-  background-image: url('../images/catalog/list.svg')
+  background-image: url("../images/catalog/list.svg")
 }
 
 .product-container {
@@ -1123,7 +1123,7 @@ img {
 }
 
 .product-container::after {
-  content: '';
+  content: "";
   height: 1px;
   position: absolute;
   background-color: #E6E6E6;
@@ -1274,7 +1274,7 @@ img {
 }
 
 .product-raiting {
-  background-image: url('../images/catalog/star.svg');
+  background-image: url("../images/catalog/star.svg");
   background-repeat: space no-repeat;
   background-size: 18px 17px;
   background-position: center;
@@ -1403,7 +1403,7 @@ img {
 }
 
 .modal-close-button {
-  background-image: url('../images/popup/close.svg');
+  background-image: url("../images/popup/close.svg");
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -1424,7 +1424,7 @@ img {
 
 .modal-close-button:active {
   background-color: #E6E6E6;
-  background-image: url('../images/popup/close-active.svg');
+  background-image: url("../images/popup/close-active.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1496,7 +1496,7 @@ img {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-  background-image: url('../images/popup/date.svg');
+  background-image: url("../images/popup/date.svg");
   background-repeat: no-repeat;
   background-position: top 15px right 22px;
   background-size: 20px 20px;
@@ -1580,14 +1580,14 @@ img {
 }
 
 .less {
-  background-image: url('../images/popup/less.svg');
+  background-image: url("../images/popup/less.svg");
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 4px 0 0 4px;
 }
 
 .more {
-  background-image: url('../images/popup/more.svg');
+  background-image: url("../images/popup/more.svg");
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 0 4px 4px 0;
@@ -1656,8 +1656,8 @@ img {
 }
 
 .tooltip-text::after {
-  content: '';
-  background-image: url('../images/popup/tooltip-arrow.svg');
+  content: "";
+  background-image: url("../images/popup/tooltip-arrow.svg");
   width: 19px;
   height: 9px;
   position: absolute;
