@@ -270,6 +270,7 @@ img {
 .greeting-block{
   text-align: center;
   padding: 69px 270px;
+  margin-bottom: 21px;
 }
 
 .greeting-block .greeting-title{
@@ -556,8 +557,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   padding: 40px 70px 30px;
-  justify-content: space-between;
-
 }
 
 .social-list{
@@ -569,6 +568,7 @@ img {
   margin: 0;
   align-items: center;
   flex-wrap: wrap;
+  margin-right: 199px;
 }
 
 .social-link{
@@ -576,8 +576,8 @@ img {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  width: 49px;
-  height: 40px;
+  width: 48px;
+  height: 40px;x
 }
 
 .social-item{
@@ -602,6 +602,7 @@ img {
 .footer-phone{
   max-width: 340px;
   min-height: 40px;
+  margin-right: 235.5px;
 }
 
 .footer-logo{
@@ -634,6 +635,7 @@ img {
 
 .footer-picture{
   fill: #000000;
+  display: block;
 }
 
 .footer-picture:hover,
@@ -747,8 +749,8 @@ img {
   border: none;
   padding: 0;
   margin: 0;
-  width: 170px;
-  margin-right: 70px;
+  width: 151px;
+  margin-right: 66px;
 }
 
 .catalog-filter-label{
@@ -1051,19 +1053,20 @@ img {
 }
 
 .select-control{
+  font-family: inherit;
   width: 292px;
   min-height: 49px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  padding: 12px 20px;
+  padding: 12px 19px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   appearance: none;
   background-image: url('../images/catalog/arrow-bottom.svg');
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 18px center;
   padding-right: 40px;
   margin-left: auto;
 }
@@ -1135,7 +1138,21 @@ img {
 }
 
 .product-container{
-  margin-bottom: 80px;
+  margin-bottom: 78px;
+  position: relative;
+}
+
+.product-container::after{
+  content: '';
+  height: 1px;
+  position: absolute;
+  background-color: #E6E6E6;
+  bottom: -40px;
+  left:0;
+  right: 0;
+
+
+
 }
 
 .product-list {
@@ -1266,7 +1283,7 @@ img {
 
 .hotel-raiting {
   margin: 0;
-  padding: 9px 22px 8px 23px;
+  padding: 8px 22px 8px 22px;
   border-radius: 4px;
   font-weight: 400;
   font-size: 16px;
@@ -1300,7 +1317,7 @@ img {
 }
 
 .pagination-block {
-  margin-bottom: 60px;
+  margin-bottom: 61px;
 }
 
 .pagination {
