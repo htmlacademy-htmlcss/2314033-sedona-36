@@ -690,15 +690,15 @@ img {
 
 .breadcrumbs-link-home {
   background-image: url('../images/catalog/home.svg');
-  width: 13px;
+  width: 15px;
   height: 15px;
   background-repeat: no-repeat;
-  background-size: 12px 12px;
+  background-size: 15px 15px;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 28px;
+  margin-right: 26px;
 }
 
 .breadcrumbs-link-home:hover,
@@ -753,6 +753,10 @@ img {
   margin-right: 66px;
 }
 
+.catalog-filter-group:nth-child(2){
+  margin-right: 140px;
+}
+
 .catalog-filter-label{
   position: relative;
 }
@@ -760,14 +764,14 @@ img {
 .control {
   position: relative;
   display: block;
-  padding-left: 36px;
+  padding-left: 37px;
 }
 
 /* Mark */
 .control-mark {
   position: absolute;
-  top: 0px;
-  left: 0;
+  top: 2px;
+  left: 1px;
   width: 20px;
   height: 20px;
   background-color: #FFFFFF;
@@ -820,13 +824,16 @@ img {
 .price {
   width: 300px;
   align-self: flex-start;
+  margin: 0;
+  margin-right: 59px;
 }
 
 .catalog-buttons{
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 190px;
   gap: 32px;
+  min-height: 117px;
 }
 
 .catalog-filter-title {
@@ -880,8 +887,8 @@ img {
 
 .from-to{
   position: absolute;
-  right: 15px;
-  top: 12px;
+  right: 19px;
+  top: 14px;
   color: #000000;
   opacity: 30%;
 }
@@ -942,7 +949,7 @@ img {
 }
 
 .toggle-max{
-  right: -8px;
+  right: -3px;
   top:-8px;
 }
 
@@ -956,7 +963,7 @@ img {
 }
 
 .range-wrapper-inputs{
-  margin-bottom: 48px;
+  margin-bottom: 44px;
   display: flex;
   gap: 2px;
 }
