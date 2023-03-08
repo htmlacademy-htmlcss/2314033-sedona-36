@@ -155,15 +155,11 @@ img {
 }
 
 .navigation-link-user {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-decoration: none;
   position: relative;
   min-height: 64px;
   width: 44px;
   height: 64px;
-  padding: 22px 12px;
   background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: center;
@@ -171,10 +167,12 @@ img {
 
 .search-icon{
   background-image: url("../images/header/search.svg");
+  display: block;
 }
 
 .favourite-icon {
   background-image: url("../images/header/heart.svg");
+  display: block;
 }
 
 .navigation-link-user:hover,
@@ -287,6 +285,8 @@ img {
   text-transform: uppercase;
   margin: 0;
   position: relative;
+  margin-bottom: 32px;
+  padding-bottom: 30px;
 }
 
 .advantages-title::after {
@@ -295,12 +295,8 @@ img {
   width: 60px;
   height: 2px;
   background-color: rgba(0, 0, 0, 0.3);
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  margin: auto;
-  margin-top: 86px;
+  bottom: -2px;
+  left: 86px
 }
 
 .advantage-picture-text .advantages-title::after {
@@ -314,7 +310,7 @@ img {
   text-transform: uppercase;
   margin: 0;
   position: relative;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .service-title::before {
@@ -341,11 +337,8 @@ img {
 }
 
 .advantage-picture-text {
-  padding: 102px 85px;
+  padding: 101px 85px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .advantages-description {
@@ -367,13 +360,10 @@ img {
   background-color: rgba(131, 179, 211, 0.12);
   color: #000000;
   margin: 0;
-  padding: 112.5px 85px;
+  padding: 112px 85px;
   text-align: center;
   width: 400px;
   min-height: 385px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .picture {
@@ -400,7 +390,6 @@ img {
 .service-greeting {
   width: 100%;
   padding: 64px 350px;
-
 }
 
 .service-list {
@@ -414,6 +403,7 @@ img {
 
 .service-item {
   width: 400px;
+  min-height: 385px;
   text-align: center;
   padding: 81px 85px;
 }
@@ -484,9 +474,19 @@ img {
   padding: 5px 10px 5px 20px;
 }
 
-.subscribe-field:hover {
-  outline: 2px solid #68A2CA;
-  border-radius: 4px;
+.subscribe-field:hover,
+.subscribe-field:focus {
+  background-color: #E6E6E6;
+}
+
+.subscribe-field:not(:placeholder-shown){
+  border: 2px solid #000000;
+  border-radius: 4px 0 0 4px;
+}
+
+
+.subscribe-field:disabled {
+  opacity: 20%;
 }
 
 .subscribe-button {
@@ -662,6 +662,7 @@ img {
 
 .breadcrumbs-item {
   position: relative;
+  margin-right: 26px;
 }
 
 .breadcrumbs-link-home {
@@ -674,7 +675,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 26px;
+
 }
 
 .breadcrumbs-link-home:hover,
@@ -726,7 +727,7 @@ img {
   padding: 0;
   margin: 0;
   width: 151px;
-  margin-right: 66px;
+  margin-right: 69px;
 }
 
 .catalog-filter-group:nth-child(2) {
@@ -772,7 +773,7 @@ img {
   background-position: center;
   position: absolute;
   top: 5px;
-  left: 5px;
+  left: 4px;
   width: 12px;
   height: 10px;
 }
@@ -817,6 +818,7 @@ img {
   font-size: 20px;
   line-height: 24px;
   margin-bottom: 32px;
+  padding: 0;
 }
 
 .catalog-filter-list {
@@ -843,7 +845,7 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  padding: 10px 30px 10px 20px;
+  padding: 10px 30px 10px 21px;
 }
 
 .catalog-min {
@@ -857,7 +859,7 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  padding: 10px 30px 10px 20px;
+  padding: 10px 30px 10px 22px;
 }
 
 .from-to {
@@ -887,6 +889,21 @@ img {
   outline: 3px solid #83B3D3;
   border-radius: 4px 0px 0px 4px;
 }
+
+
+/* Спорный момент. У нас стоит Value,
+а не placeholder, значит если раскомментить, то
+рамка всегда будет черной. Вопросик к макету */
+
+/* .catalog-max:not(:placeholder-shown){
+  outline: 2px solid #000000;
+  border-radius: 4px 0 0 4px;
+}
+
+.catalog-min:not(:placeholder-shown){
+  outline: 2px solid #000000;
+  border-radius: 0 4px 4px 0;
+} */
 
 .catalog-min:focus {
   outline: none;
@@ -1118,7 +1135,7 @@ img {
 }
 
 .product-container {
-  margin-bottom: 78px;
+  margin-bottom: 79px;
   position: relative;
 }
 
@@ -1167,7 +1184,7 @@ img {
 .product-image {
   width: 100%;
   height: auto;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   display: block;
 }
 
@@ -1385,9 +1402,9 @@ img {
   background-color:rgba(242, 242, 242, 0.8);
 }
 
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 
 .modal {
   position: relative;
@@ -1488,6 +1505,7 @@ img {
 
 .calendar {
   padding: 12px 40px 12px 18px;
+  margin-bottom: 4px;
   border: none;
   background-color: #F2F2F2;
   font-family: inherit;
@@ -1517,7 +1535,7 @@ img {
  .date-wrapper {
   display: grid;
   grid-template-columns: 119px 440px;
-  grid-template-rows: 48px 25px;
+  grid-template-rows: min-content min-content;
   column-gap: 20px;
   align-items: center;
   margin-bottom: 23px;
@@ -1540,12 +1558,13 @@ img {
  .people-number {
   width: 31px;
   height: 48px;
-  padding: 14px 10px;
+  padding: 14px 5px;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   border: none;
   background-color: #F2F2F2;
+  text-align: center;
  }
 
 .people-number::-webkit-inner-spin-button,
@@ -1576,7 +1595,11 @@ img {
 }
 
 .add-button:active {
-  background-color: #d6d6d6;
+  border: 2px solid #83B3D3;
+}
+
+.add-button:disabled {
+  opacity: 20%;
 }
 
 .less {
