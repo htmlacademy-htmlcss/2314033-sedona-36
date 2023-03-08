@@ -1402,9 +1402,9 @@ img {
   background-color:rgba(242, 242, 242, 0.8);
 }
 
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 
 .modal {
   position: relative;
@@ -1505,6 +1505,7 @@ img {
 
 .calendar {
   padding: 12px 40px 12px 18px;
+  margin-bottom: 4px;
   border: none;
   background-color: #F2F2F2;
   font-family: inherit;
@@ -1534,7 +1535,7 @@ img {
  .date-wrapper {
   display: grid;
   grid-template-columns: 119px 440px;
-  grid-template-rows: 48px 25px;
+  grid-template-rows: min-content min-content;
   column-gap: 20px;
   align-items: center;
   margin-bottom: 23px;
@@ -1557,12 +1558,13 @@ img {
  .people-number {
   width: 31px;
   height: 48px;
-  padding: 14px 10px;
+  padding: 14px 5px;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   border: none;
   background-color: #F2F2F2;
+  text-align: center;
  }
 
 .people-number::-webkit-inner-spin-button,
@@ -1593,7 +1595,11 @@ img {
 }
 
 .add-button:active {
-  background-color: #d6d6d6;
+  border: 2px solid #83B3D3;
+}
+
+.add-button:disabled {
+  opacity: 20%;
 }
 
 .less {
