@@ -662,6 +662,7 @@ img {
 
 .breadcrumbs-item {
   position: relative;
+  margin-right: 26px;
 }
 
 .breadcrumbs-link-home {
@@ -674,7 +675,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 26px;
+
 }
 
 .breadcrumbs-link-home:hover,
@@ -726,7 +727,7 @@ img {
   padding: 0;
   margin: 0;
   width: 151px;
-  margin-right: 66px;
+  margin-right: 69px;
 }
 
 .catalog-filter-group:nth-child(2) {
@@ -772,7 +773,7 @@ img {
   background-position: center;
   position: absolute;
   top: 5px;
-  left: 5px;
+  left: 4px;
   width: 12px;
   height: 10px;
 }
@@ -817,6 +818,7 @@ img {
   font-size: 20px;
   line-height: 24px;
   margin-bottom: 32px;
+  padding: 0;
 }
 
 .catalog-filter-list {
@@ -843,7 +845,7 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  padding: 10px 30px 10px 20px;
+  padding: 10px 30px 10px 21px;
 }
 
 .catalog-min {
@@ -857,7 +859,7 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  padding: 10px 30px 10px 20px;
+  padding: 10px 30px 10px 22px;
 }
 
 .from-to {
@@ -887,6 +889,21 @@ img {
   outline: 3px solid #83B3D3;
   border-radius: 4px 0px 0px 4px;
 }
+
+
+/* Спорный момент. У нас стоит Value,
+а не placeholder, значит если раскомментить, то
+рамка всегда будет черной. Вопросик к макету */
+
+/* .catalog-max:not(:placeholder-shown){
+  outline: 2px solid #000000;
+  border-radius: 4px 0 0 4px;
+}
+
+.catalog-min:not(:placeholder-shown){
+  outline: 2px solid #000000;
+  border-radius: 0 4px 4px 0;
+} */
 
 .catalog-min:focus {
   outline: none;
@@ -1118,7 +1135,7 @@ img {
 }
 
 .product-container {
-  margin-bottom: 78px;
+  margin-bottom: 79px;
   position: relative;
 }
 
@@ -1167,7 +1184,7 @@ img {
 .product-image {
   width: 100%;
   height: auto;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   display: block;
 }
 
