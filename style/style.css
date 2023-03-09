@@ -490,7 +490,8 @@ img {
 
 .subscribe-button {
   font-family: inherit;
-  user-select: none;
+  -webkit-user-select: none;
+          user-select: none;
   cursor: pointer;
   border: none;
   text-decoration: none;
@@ -875,7 +876,8 @@ img {
 .catalog-min::-webkit-outer-spin-button,
 .catalog-max::-webkit-inner-spin-button,
 .catalog-max::-webkit-outler-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -963,7 +965,8 @@ img {
   background: #82b3d3;
   border-radius: 4px;
   font-family: inherit;
-  user-select: none;
+  -webkit-user-select: none;
+          user-select: none;
   cursor: pointer;
   border: none;
   text-decoration: none;
@@ -993,7 +996,8 @@ img {
   background: rgba(0, 0, 0, 0);
   border-radius: 4px;
   font-family: inherit;
-  user-select: none;
+  -webkit-user-select: none;
+          user-select: none;
   cursor: pointer;
   border: none;
   text-decoration: none;
@@ -1059,7 +1063,8 @@ img {
   padding: 12px 19px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   background-image: url("../images/catalog/arrow-bottom.svg");
   background-repeat: no-repeat;
   background-position: right 18px center;
@@ -1231,7 +1236,8 @@ img {
 
 .product-button {
   font-family: inherit;
-  user-select: none;
+  -webkit-user-select: none;
+          user-select: none;
   cursor: pointer;
   border: none;
   text-decoration: none;
@@ -1473,7 +1479,8 @@ img {
 
 .search-button {
   font-family: inherit;
-  user-select: none;
+  -webkit-user-select: none;
+          user-select: none;
   cursor: pointer;
   border: none;
   text-decoration: none;
@@ -1570,7 +1577,8 @@ img {
 
 .people-number::-webkit-inner-spin-button,
 .people-number::-webkit-outer-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
