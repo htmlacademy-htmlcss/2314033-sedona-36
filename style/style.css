@@ -32,6 +32,7 @@ body {
   color: #000000;
   margin: 0;
   height: 100%;
+  min-width: 1280px;
 }
 
 img {
@@ -471,7 +472,7 @@ img {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-  padding: 5px 10px 5px 20px;
+  padding: 5px 10px 3px 20px;
 }
 
 .subscribe-field:hover,
@@ -539,6 +540,10 @@ img {
   padding: 40px 70px 30px;
 }
 
+.social {
+  margin-right: 199px;
+}
+
 .social-list {
   display: flex;
   min-height: 40px;
@@ -548,7 +553,6 @@ img {
   margin: 0;
   align-items: center;
   flex-wrap: wrap;
-  margin-right: 199px;
 }
 
 .social-link {
@@ -582,12 +586,12 @@ img {
 .footer-phone {
   max-width: 340px;
   min-height: 40px;
-  margin-right: 235.5px;
 }
 
 .footer-logo {
   max-width: 150px;
   min-height: 33px;
+  margin-left: auto;
 }
 
 .footer-number {
@@ -941,7 +945,7 @@ img {
 }
 
 .toggle-max {
-  right: -3px;
+  right: -2px;
   top:-8px;
 }
 
@@ -1033,6 +1037,7 @@ img {
 
 .search {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
