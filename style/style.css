@@ -847,7 +847,8 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  padding: 10px 30px 10px 21px;
+  padding: 10px 38px 10px 21px;
+  appearance: textfield;
 }
 
 .catalog-min {
@@ -861,7 +862,8 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  padding: 10px 30px 10px 22px;
+  padding: 9px 40px 10px 21px;
+  appearance: textfield;
 }
 
 .from-to {
@@ -877,7 +879,6 @@ img {
 .catalog-max::-webkit-inner-spin-button,
 .catalog-max::-webkit-outler-spin-button {
   -webkit-appearance: none;
-          appearance: none;
   margin: 0;
 }
 
