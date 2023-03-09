@@ -1522,7 +1522,7 @@ img {
 
 .calendar::-webkit-input-placeholder {
   color: #000000;
- }
+}
 
 .calendar:hover,
 .calendar:focus {
@@ -1533,16 +1533,16 @@ img {
   opacity: 20%;
 }
 
- .date-wrapper {
+.date-wrapper {
   display: grid;
   grid-template-columns: 119px 440px;
   grid-template-rows: min-content min-content;
   column-gap: 20px;
   align-items: center;
   margin-bottom: 23px;
- }
+}
 
- .date-info {
+.date-info {
   margin: 0;
   padding-left: 18px;
   grid-column: 2;
@@ -1550,13 +1550,13 @@ img {
   font-size: 16px;
   line-height: 21px;
   color: #333333;
- }
+}
 
- .attention {
+.attention {
   color: #ff5757;
- }
+}
 
- .people-number {
+.people-number {
   width: 31px;
   height: 48px;
   padding: 14px 5px;
@@ -1566,7 +1566,7 @@ img {
   border: none;
   background-color: #f2f2f2;
   text-align: center;
- }
+}
 
 .people-number::-webkit-inner-spin-button,
 .people-number::-webkit-outer-spin-button {
