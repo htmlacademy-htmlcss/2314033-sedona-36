@@ -1402,9 +1402,6 @@ img {
   background-color:rgba(242, 242, 242, 0.8);
 }
 
-/* .modal-container-close {
-  display: none;
-} */
 
 .modal {
   position: relative;
@@ -1430,8 +1427,8 @@ img {
   background-color: #F2F2F2;
   cursor: pointer;
   border: none;
-  right: 52px;
-  top: 64px;
+  right: 51px;
+  top: 65px;
   padding: 0;
 }
 
@@ -1573,51 +1570,44 @@ img {
   margin: 0;
 }
 
-.people-number:hover, .people-number:focus {
-  background-color: #E6E6E6;
-}
-
 .people-number:disabled {
   opacity: 20%;
 }
 
 .add-button {
-  width: 40px;
-  height: 48px;
+  width: 20px;
+  height: 20px;
   border: none;
-  background-color: #F2F2F2;
   cursor: pointer;
   padding: 0;
+  margin: 14px 10px;
+  background-color: #F2F2F2;
 }
 
-.add-button:hover, .add-button:focus {
-  background-color: #E6E6E6;
-}
-
-.add-button:active {
-  border: 2px solid #83B3D3;
-}
-
-.add-button:disabled {
-  opacity: 20%;
-}
-
-.less {
-  background-image: url("../images/popup/less.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 4px 0 0 4px;
-}
-
+.less,
 .more {
-  background-image: url("../images/popup/more.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 0 4px 4px 0;
+  fill: #756157;
+  fill-opacity: 0.3;
+}
+
+.less:hover,
+.less:focus,
+.more:hover,
+.more:focus {
+  fill: #000000;
+  fill-opacity: 1;
+}
+
+.less:active,
+.more:active {
+  fill: #756157;
+  fill-opacity: 0.3;
 }
 
 .button-wrapper {
   display: flex;
+  background-color: #F2F2F2;
+  border-radius: 4px;
 }
 
 .adults{
