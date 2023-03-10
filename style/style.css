@@ -144,12 +144,12 @@ img {
   background: #756257;
 }
 
-.navigation-link:hover,
-.navigation-link:focus {
+.navigation-link:not(.current-link):hover,
+.navigation-link:not(.current-link):focus {
   background-color: #f2f2f2;
 }
 
-.navigation-link:active {
+.navigation-link:not(.current-link):active {
   opacity: 60%;
 }
 
@@ -763,7 +763,7 @@ img {
   opacity: 30%;
 }
 
-.control:disabled {
+.control-input:disabled {
   opacity: 10%;
 }
 
