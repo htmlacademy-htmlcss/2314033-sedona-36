@@ -1577,6 +1577,7 @@ img {
   border: none;
   background-color: #f2f2f2;
   text-align: center;
+  appearance: textfield;
 }
 
 .people-number::-webkit-inner-spin-button,
