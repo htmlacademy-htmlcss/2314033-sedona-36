@@ -64,7 +64,7 @@ img {
 
 /* HEADER */
 
-.navigation {
+.page-header {
   width: 1060px;
   margin: 0 auto;
   min-height: 64px;
@@ -1099,9 +1099,9 @@ img {
   margin-left: 70px;
 }
 
+
 .display-button {
   display: block;
-  padding: 14px 12px;
   width: 48px;
   height: 48px;
   border: 2px solid #e5e5e5;
@@ -1328,6 +1328,11 @@ img {
   flex-wrap: wrap;
 }
 
+.pagination-list {
+  min-width: 60px;
+  text-align: center;
+}
+
 .pagination-link {
   text-decoration: none;
   background: #82b3d3;
@@ -1339,8 +1344,6 @@ img {
   color: #ffffff;
   display: block;
   padding: 12px 10px;
-  min-width: 60px;
-  text-align: center;
 }
 
 .pagination-link-current {
