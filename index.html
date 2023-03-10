@@ -7,17 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style/style.css">
   <link rel="icon" href="./favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
   <title>HTML Academy: Седона</title>
 </head>
 
 <body>
   <div class="page-container">
-    <header class="main-header">
-      <nav class="navigation">
+      <header class="page-header">
         <a class="header-logo">
           <img class="logo-picture" src="./images/header/logo.svg" alt="Logo of HTML Academy" width="140" height="70">
         </a>
-        <div class="navigation-wrapper">
+        <nav class="navigation-wrapper">
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link current-link">Главная</a>
@@ -45,9 +45,8 @@
               <a class="navigation-button" href="catalog.html">Хочу сюда!</a>
             </li>
           </ul>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
 
     <main class="main-page">
       <h1 class="visually-hidden">Главная информация по городу Седона.</h1>
@@ -79,7 +78,7 @@
           </li>
           <li class="advantages-items  darkblue">
             <h3 class="advantages-title">Красивая<br> дорога</h3>
-            <p class="advantages-description color-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="advantages-description color-description">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
           </li>
           <li class="advantages-items">
             <h3 class="advantages-title">Мало <br>туристов</h3>
@@ -200,20 +199,20 @@
     <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
         <button class="modal-close-button">
-          <span class="visually-hidden">Закрыть</span>
+          <span class="visually-hidden">Закрыть окно.</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в седоне</h2>
           <form class="date-table" action="https://echo.htmlacademy.ru/" method="get">
             <div class="date-wrapper">
               <label class="field-name" for="in-date">Дата Заезда: </label>
-              <input class="calendar" type="text" id="in-date" name="date-in" placeholder="27 апреля 2020">
+              <input class="calendar" type="text" id="in-date" name="date-in" placeholder="27 апреля 2020" required>
               <p class="date-info attention">Мы не можем отправить вас в прошлое.</p>
             </div>
 
             <div class="date-wrapper">
               <label class="field-name" for="out-date">Дата Выезда:</label>
-              <input class="calendar" type="text" id="out-date" name="date-out" placeholder="1 сентября 2023">
+              <input class="calendar" type="text" id="out-date" name="date-out" placeholder="1 сентября 2023" required>
               <p class="date-info">На эти даты есть свободные номера. Пока есть.</p>
             </div>
 
@@ -221,12 +220,14 @@
               <label class="field-name" for="add-adults">Взрослые:</label>
               <div class="button-wrapper adults">
                 <button class="add-button" type="button">
+                  <span class="visually-hidden">Уменьшить количество взрослых.</span>
                   <svg class="less" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
                     <path fill="currenColor"  d="M3 9v2h14V9H3Z" />
                   </svg>
                 </button>
                 <input class="people-number" type="number" id="add-adults" name="adults" value="2">
                 <button class="add-button" type="button">
+                  <span class="visually-hidden">Увеличить количество взрослых.</span>
                   <svg class="more" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
                     <path fill="currenColor" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
                   </svg>
@@ -236,6 +237,7 @@
                 <label class="field-name" for="add-kids">Дети:</label>
                 <span class="tooltip">
                   <button class="button-tooltip" type="button" aria-labelledby="tooltip-label-date">
+                    <span class="visually-hidden">Посмотреть подсказку.</span>
                     <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"
                       viewBox="0 0 26 26">
                       <circle cx="13" cy="13" r="13" fill="currentColor" />
@@ -249,12 +251,14 @@
               </span>
               <div class="button-wrapper">
                 <button class="add-button" type="button">
+                  <span class="visually-hidden">Уменьшить количество детей.</span>
                   <svg class="less" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
                     <path fill="currenColor" d="M3 9v2h14V9H3Z" />
                   </svg>
                 </button>
                 <input class="people-number" type="number" id="add-kids" name="kids" value="2">
                 <button class="add-button" type="button">
+                  <span class="visually-hidden">Увеличить количество детей.</span>
                   <svg class="more" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
                     <path fill="currenColor" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
                   </svg>
