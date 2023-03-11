@@ -1638,29 +1638,20 @@ img {
 }
 
 .tooltip {
-  width: 26px;
-  height: 26px;
   position: absolute;
   margin-left: 10px;
 }
 
 .button-tooltip {
   border: none;
-  background-color: transparent;
-  padding: 0;
-  margin: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #83b3d3;
   display: block;
-}
-
-.tooltip-icon {
-  width: 100%;
-  height: 100%;
-  color: #83b3d3;
-  display: block;
-}
-
-.button-tooltip:hover .tooltip-icon {
-  color: #68a2ca;
+  background-image: url("../images/popup/tooltip.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .tooltip-text {
