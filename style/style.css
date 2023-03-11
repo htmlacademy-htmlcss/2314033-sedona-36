@@ -514,7 +514,7 @@ img {
   background-color: #68a2ca;
 }
 
-.subscribe-button:active {
+.subscribe-button:not(:disabled):active {
   background-color: #68a2ca;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -755,15 +755,19 @@ img {
   border-radius: 4px;
 }
 
-.control:hover {
+.control-input:not(:disabled):hover {
   opacity: 60%;
 }
 
-.control:active {
+.control-input:not(:disabled):active {
   opacity: 30%;
 }
 
-.control-input:disabled {
+.control-input:disabled + .control-mark {
+  opacity: 10%;
+}
+
+.control-input:disabled ~ .control-label {
   opacity: 10%;
 }
 
@@ -883,8 +887,8 @@ img {
   margin: 0;
 }
 
-.catalog-max:hover,
-.catalog-min:hover {
+.catalog-max:not(:disabled):hover,
+.catalog-min:not(:disabled):hover {
   background-color: #e6e6e6;
 }
 
@@ -894,25 +898,15 @@ img {
   border-radius: 4px 0 0 4px;
 }
 
-
-/* Спорный момент. У нас стоит Value,
-а не placeholder, значит если раскомментить, то
-рамка всегда будет черной. Вопросик к макету */
-
-/* .catalog-max:not(:placeholder-shown){
-  outline: 2px solid #000000;
-  border-radius: 4px 0 0 4px;
-}
-
-.catalog-min:not(:placeholder-shown){
-  outline: 2px solid #000000;
-  border-radius: 0 4px 4px 0;
-} */
-
 .catalog-min:focus {
   background: #e6e6e6;
   outline: 3px solid #83b3d3;
   border-radius: 0 4px 4px 0;
+}
+
+.catalog-max:disabled,
+.catalog-min:disabled {
+  opacity: 20%;
 }
 
 .range-scale {
@@ -948,13 +942,17 @@ img {
   top: -8px;
 }
 
-.range-toggle:hover,
+.range-toggle:not(:disabled):hover,
 .range-toggle:focus {
   background-color: #f2f2f2;
 }
 
-.range-toggle:active {
+.range-toggle:not(:disabled):active {
   background-color: #e6e6e6;
+}
+
+.range-toggle:disabled {
+  opacity: 20%;
 }
 
 .range-wrapper-inputs {
@@ -986,7 +984,7 @@ img {
   background-color: #68a2ca;
 }
 
-.catalog-apply:active {
+.catalog-apply:not(:disabled):active {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1012,7 +1010,7 @@ img {
   width: 191px;
 }
 
-.catalog-reset:hover {
+.catalog-reset:not(:disabled):hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1021,13 +1019,13 @@ img {
   border-radius: 4px;
 }
 
-.catalog-reset:active {
+.catalog-reset:not(:disabled):active {
   outline: none;
   color: rgba(255, 255, 255, 0.3);
 }
 
 .catalog-reset:disabled {
-  color: rgba(255, 255, 255, 0.1);
+  opacity: 10%;
 }
 /* SEARCH RESULTS */
 .inner-search {
@@ -1262,7 +1260,7 @@ img {
   background-color: #68a2ca;
 }
 
-.product-button:active {
+.product-button:not(:disabled):active {
   color: rgba(255, 255, 255, 0.3);
 }
 
