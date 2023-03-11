@@ -1512,7 +1512,8 @@ img {
 }
 
 .calendar {
-  padding: 12px 40px 12px 18px;
+  width: 440px;
+  padding: 12px 40px 12px 20px;
   margin-bottom: 4px;
   border: none;
   background-color: #f2f2f2;
@@ -1539,16 +1540,15 @@ img {
 
 .date-wrapper {
   display: grid;
-  grid-template-columns: 119px 440px;
+  grid-template-columns: auto auto;
   grid-template-rows: min-content min-content;
-  column-gap: 20px;
   align-items: center;
   margin-bottom: 23px;
 }
 
 .date-info {
   margin: 0;
-  padding-left: 18px;
+  padding-left: 20px;
   grid-column: 2;
   font-weight: 400;
   font-size: 16px;
@@ -1623,23 +1623,27 @@ img {
   border-radius: 4px;
 }
 
-.adults {
-  margin-right: 88px;
-}
-
 .number-wrapper {
   display: flex;
   margin-bottom: 48px;
   align-items: center;
+  justify-content: space-between;
+}
+
+.visitors {
+  display: flex;
+  align-items: center;
 }
 
 .form-label {
-  margin-right: 82px;
+  display: flex;
+  align-items: center;
+  width: 86px;
+  margin-right: 46px;
 }
 
 .tooltip {
-  position: absolute;
-  margin-left: 10px;
+  position: relative;
 }
 
 .button-tooltip {
@@ -1665,7 +1669,7 @@ img {
   line-height: 20px;
   padding: 20px 18px 24px 22px;
   position: absolute;
-  top: 41px;
+  top: 40px;
   left: -115px;
   z-index: 1;
   display: none;
