@@ -13,40 +13,40 @@
 
 <body>
   <div class="page-container">
-      <header class="page-header">
-        <a class="header-logo catalog-logo" href="./index.html">
-          <img class="logo-picture" src="./images/header/logo.svg" alt="Logo of HTML Academy" width="140" height="70">
-        </a>
-        <nav class="navigation-wrapper">
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-link " href="./index.html">Главная</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">О Седоне</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link current-link">Гостиницы</a>
-            </li>
-          </ul>
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link-user search-icon" href="#">
-                <span class="visually-hidden">Поиск</span>
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link-user favourite-icon" href="#">
-                <span class="visually-hidden">Лайки</span>
-                <span class="favourite-number">12</span>
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-button" href="catalog.html">Хочу сюда!</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+    <header class="page-header">
+      <a class="header-logo catalog-logo" href="./index.html">
+        <img class="logo-picture" src="./images/header/logo.svg" alt="Logo of HTML Academy" width="140" height="70">
+      </a>
+      <nav class="navigation-wrapper">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link " href="./index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link current-link">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link-user search-icon" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link-user favourite-icon" href="#">
+              <span class="visually-hidden">Лайки</span>
+              <span class="favourite-number">12</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-button" href="catalog.html">Хочу сюда!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <main class="main-page">
       <!-- FILTER SECTION -->
@@ -125,10 +125,12 @@
             <div class="range">
               <div class="range-wrapper-inputs">
                 <label class="catalog-filter-label">
-                  <input class="catalog-max" type="number" name="max-sum" value="0"> <span class="from-to">от</span>
+                  <input class="catalog-max" type="number" name="max-sum" value="0">
+                  <span class="from-to">от</span>
                 </label>
                 <label class="catalog-filter-label">
-                  <input class="catalog-min" type="number" name="min-sum" value="9000"><span class="from-to">до</span>
+                  <input class="catalog-min" type="number" name="min-sum" value="9000">
+                  <span class="from-to">до</span>
                 </label>
               </div>
 
@@ -156,8 +158,9 @@
         <h2 class="visually-hidden">Глобальные результаты поиска гостиниц.</h2>
         <section class="search">
           <h3 class="visually-hidden">Группировки результатов гостиниц.</h3>
-          <p class="found-hotel">НАЙДЕНО ГОСТИНИЦ:<span class="found-hotel"> 38</span></p>
-
+          <p class="found-hotel">НАЙДЕНО ГОСТИНИЦ:
+            <span class="found-hotel"> 38</span>
+          </p>
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
@@ -250,7 +253,7 @@
             </li>
           </ul>
         </section>
-          <!-- PAGINATION -->
+        <!-- PAGINATION -->
         <section class="pagination-block">
           <h3 class="visually-hidden">Пагинация страницы поиска.</h3>
           <ul class="pagination">
@@ -279,7 +282,8 @@
       <!-- SUBSCRIBE -->
       <section class="subscribe catalog">
         <h2 class="greeting-title">Подпишитесь на рассылку</h2>
-        <p class="greeting-about color-description">Только полезная информация и никакого спама,<br> честное бойскаутское!
+        <p class="greeting-about color-description">Только полезная информация и никакого спама,<br> честное
+          бойскаутское!
         </p>
         <form class="form-wrapper" action=" https://echo.htmlacademy.ru/" method="post">
           <label>

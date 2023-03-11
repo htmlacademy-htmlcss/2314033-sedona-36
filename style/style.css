@@ -942,11 +942,6 @@ img {
   top: -8px;
 }
 
-.range-toggle:not(:disabled):hover,
-.range-toggle:focus {
-  background-color: #f2f2f2;
-}
-
 .range-toggle:not(:disabled):active {
   outline: 3px solid #83B3D3;
   border-radius: 5px;
