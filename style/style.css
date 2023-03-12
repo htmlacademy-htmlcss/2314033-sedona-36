@@ -1199,7 +1199,6 @@ img {
   height: auto;
   margin-bottom: 15px;
   display: block;
-  background-color: #82b3d3;
 }
 
 .product-title {
@@ -1313,6 +1312,10 @@ img {
   margin: 0;
 }
 
+.star-1 {
+  width: 35px;
+}
+
 .star-2 {
   width: 42px;
 }
@@ -1323,6 +1326,10 @@ img {
 
 .star-4 {
   width: 89px;
+}
+
+.star-5 {
+  width: 105px;
 }
 
 .pagination-block {
