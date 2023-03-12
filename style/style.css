@@ -378,6 +378,7 @@ img {
 .advantage-image {
   display: block;
   object-fit: cover;
+  background-color: #82b3d3;
 }
 
 .dark-color {
@@ -634,6 +635,7 @@ img {
 /* CATALOG */
 /* FILTER SECTION */
 .inner-catalog {
+  background-color: #82b3d3;;
   background-image: url("../images/catalog/filter.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1195,6 +1197,7 @@ img {
   height: auto;
   margin-bottom: 15px;
   display: block;
+  background-color: #82b3d3;
 }
 
 .product-title {
