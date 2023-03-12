@@ -755,11 +755,19 @@ img {
   border-radius: 4px;
 }
 
-.control-input:not(:disabled):hover {
+.control-input:not(:disabled):hover ~ .control-label {
   opacity: 60%;
 }
 
-.control-input:not(:disabled):active {
+.control-input:not(:disabled):hover + .control-mark {
+  opacity: 60%;
+}
+
+.control-input:not(:disabled):active ~ .control-label {
+  opacity: 30%;
+}
+
+.control-input:not(:disabled):active + .control-mark {
   opacity: 30%;
 }
 
