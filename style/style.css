@@ -378,6 +378,7 @@ img {
 .advantage-image {
   display: block;
   object-fit: cover;
+  background-color: #82b3d3;
 }
 
 .dark-color {
@@ -588,6 +589,9 @@ img {
 .footer-phone {
   max-width: 340px;
   min-height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .footer-logo {
@@ -634,6 +638,7 @@ img {
 /* CATALOG */
 /* FILTER SECTION */
 .inner-catalog {
+  background-color: #82b3d3;;
   background-image: url("../images/catalog/filter.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -755,11 +760,19 @@ img {
   border-radius: 4px;
 }
 
-.control-input:not(:disabled):hover {
+.control-input:not(:disabled):hover ~ .control-label {
   opacity: 60%;
 }
 
-.control-input:not(:disabled):active {
+.control-input:not(:disabled):hover + .control-mark {
+  opacity: 60%;
+}
+
+.control-input:not(:disabled):active ~ .control-label {
+  opacity: 30%;
+}
+
+.control-input:not(:disabled):active + .control-mark {
   opacity: 30%;
 }
 
@@ -1181,7 +1194,6 @@ img {
   grid-column: 1 / -1;
 }
 
-
 .product-image {
   width: 100%;
   height: auto;
@@ -1300,6 +1312,10 @@ img {
   margin: 0;
 }
 
+.star-1 {
+  width: 35px;
+}
+
 .star-2 {
   width: 42px;
 }
@@ -1310,6 +1326,10 @@ img {
 
 .star-4 {
   width: 89px;
+}
+
+.star-5 {
+  width: 105px;
 }
 
 .pagination-block {
