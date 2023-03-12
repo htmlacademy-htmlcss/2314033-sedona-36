@@ -589,6 +589,9 @@ img {
 .footer-phone {
   max-width: 340px;
   min-height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .footer-logo {
